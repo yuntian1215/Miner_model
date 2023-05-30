@@ -5,6 +5,7 @@ filter.txt comes from https://github.com/xd4rker/MinerBlock/blob/master/assets/f
 
 The whole framework refer to the passage: Outguard: Detecting In-Browser Covert Cryptocurrency Mining in the Wild
 
+
 ### Important things:
 
 Please pull or push the html in BadURL and BadTest in .rar format. if you unzip it and `try to git add .`, you will find:
